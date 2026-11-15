@@ -24,3 +24,10 @@ The available v12 materials include candidate changes and audit/blocker document
 ## Required next import
 
 Upload the verified v11 ZIPs and DOCX files to this repository using GitHub's web UI (or a Git-capable client), then verify their repository paths and SHA-256 values. Once the complete v12 source and art overlay are available, rebase and validate before assigning a new formal version.
+
+## 2026-11-15 import attempt
+
+The requested source write was checked against the files available in the current session. The only locally materialized complete archive found was v10.0.0.2, which is older than the repository's recorded v11.0.0.0 baseline. No verified v11.0.0.0 or v12.0.0.0 source archive was available as a local file for binary transfer. To avoid regressing the repository or publishing an incomplete release, no source archive was committed in this attempt.
+
+The repository's existing version and artifact index records were left unchanged. This note is an import-attempt record only; it does not mark any source package as uploaded.
+
