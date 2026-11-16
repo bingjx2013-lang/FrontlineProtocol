@@ -38,3 +38,9 @@ Complete v12 Client, Hub Server (枢纽), Admin/AdminPanel source; 12-group art 
 External Unity import/compile, Play Mode, CI, APK/AAB build, Android install/device test, Windows host, production TLS/WSS and pressure/soak tests were not run.
 
 This record is a documentation-only maintenance entry in the test mirror; it does not claim binary source upload or a formal v12 release.
+
+
+## Generated delivery fingerprints
+- Word daily report: 41,158 bytes; SHA-256 `dfdc9b22e5ddf261f534704bab5f2bb87c043c8c3721d2bc0a00b7f1b4822fb0`.
+- Evidence ZIP: 54,481 bytes; 26 entries; CRC PASS; SHA-256 `c9550b5fd28fcb5324647d18e19ab649cb64a471e8ec011f668902a5c84aaa6f`.
+- No new complete source archive or network patch was created because no source/network code changed.
