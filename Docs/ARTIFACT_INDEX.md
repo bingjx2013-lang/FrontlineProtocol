@@ -17,7 +17,7 @@ This index records artifacts verified in the current file workspace. It does **n
 - `FrontlineProtocol_Daily_Maintenance_Report_2026-11-16.docx` — 40,440 bytes; SHA-256 `1a2b367eec7bccebc7f44b1ec4296c0e9268c757774592a7d064fac14ee0b762`.
 - `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-16.zip` — 50,558 bytes; CRC PASS; SHA-256 `26aba7c5d0549f5df7dedec87038ad5f1ee0bdae4443b7bf1bef04c7f0938db4`.
 - `FrontlineProtocol_Daily_Maintenance_Report_2026-11-17.docx` — 41,158 bytes; SHA-256 `dfdc9b22e5ddf261f534704bab5f2bb87c043c8c3721d2bc0a00b7f1b4822fb0`.
-- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-17.zip` — 54,481 bytes; 26 entries; CRC PASS; SHA-256 `c9550b5fd28fcb5324647d18e19ab649cb64a471e8ec011f668902a5c84aaa6f`.
+- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-17.zip` — 26 entries; CRC PASS; binary remains in the ChatGPT file workspace (not uploaded to this repository).
 
 ## v12 candidate and blocker materials
 
