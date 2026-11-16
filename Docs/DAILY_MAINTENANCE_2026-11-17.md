@@ -41,6 +41,6 @@ This record is a documentation-only maintenance entry in the test mirror; it doe
 
 
 ## Generated delivery fingerprints
-- Word daily report: 41,158 bytes; SHA-256 `dfdc9b22e5ddf261f534704bab5f2bb87c043c8c3721d2bc0a00b7f1b4822fb0`.
+- Word daily report: 41,222 bytes; SHA-256 `65a2b05051c8ba161c8be8fed8346163a4382e16f7d602f7ec1d56c9ff19e224`.
 - Evidence ZIP: 26 entries; CRC PASS; binary remains in the ChatGPT file workspace (not uploaded to this repository).
 - No new complete source archive or network patch was created because no source/network code changed.
