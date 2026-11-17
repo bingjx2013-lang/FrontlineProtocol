@@ -50,3 +50,16 @@ Candidate diffs and blocker/audit documents are not a substitute for a complete 
 ## Required next import
 
 Upload the verified v11 binaries to this repository through GitHub's web UI or a Git-capable client if repository mirroring is desired. For a v12 release, first restore the complete v12 source tree, art overlay and version/bug/integration manifests, then run the full source rebase and cross-module validation. Do not label this test mirror as the formal main repository.
+
+
+## 2026-11-18 maintenance reconciliation
+
+- Rechecked the formal repository `We-MCS/Project_Frontline-Protocol`: branch `main`, size 0 KB, README only; current connector permission is pull=true / push=false. The latest accessible commit is `d5fd155bdb482125b98d169a9a81d458de0c9180` (Initial commit, 2026-11-15T00:10:18Z).
+- This test mirror remains text-only metadata/index documentation, not the formal main repository. Its current main head before this maintenance record was `ed1ad1140b404d749f88960cc88b83048dfaf9e0`.
+- v11.0.0.0 complete archive and network patch were rechecked from the current file workspace. Complete ZIP: 1,432,078 bytes, 490 entries, CRC PASS, SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`. Network patch: 132,041 bytes, 33 entries, CRC PASS, all 33 entries byte-identical to corresponding files in the complete archive.
+- 16/16 regression entry points passed individually (12 self-contained + 4 isolated-server). The aggregate one-shot runner exceeded the 300-second command window and remains TIMEOUT, not PASS.
+- Static checks: integration manifest 488/488 exact; SHA256SUMS 489/489 exact; 56/56 JSON parse; Python compileall 18/18; Unity .meta pairs 145/145 with unique GUIDs; OBJ 28 files / 1,320 vertices / 928 faces / zero invalid indices; C# 48 files passed delimiter scan only (not compilation).
+- Two documentation discrepancies were recorded in `Docs/ERRATA_v11.0.0.0_2026-11-18.md`: Server/README.md still says WebSocket query-string tokens are used, while current tests confirm Authorization: Bearer and query-token rejection; v11 validation/status documents say 54 JSON files, while the archive contains 56 and all parse.
+- No source, configuration, art, API, protocol, or Schema changes were made. Formal version remains v11.0.0.0. No new complete project ZIP or network patch was generated.
+- v12.0.0.0 remains BLOCKED: complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and version/bug/integration manifests are not accessible.
+- Unity Editor, Play Mode, CI, APK/AAB, Android device, Windows host, production TLS/WSS and pressure/soak acceptance were not executed.
