@@ -43,3 +43,13 @@ No complete v12 Client/Hub Server/Admin source tree, 12-group art overlay, or `F
 - Static integrity: 488/488 integration-manifest files, 489/489 SHA256SUMS, 56/56 JSON parse, 18/18 Python AST/compileall, 145/145 Unity meta pairs, 145 unique GUIDs, 28 OBJ files / 928 faces / zero invalid indices, 48 C# structural checks.
 - No code/config/art/API/schema change was made; no new formal version or network patch was created.
 - This repository remains a test mirror with text-only metadata; the formal main repository remains `We-MCS/Project_Frontline-Protocol`.
+
+
+## Daily maintenance — 2026-11-18
+
+- `FrontlineProtocol_Daily_Maintenance_Report_2026-11-18.docx` — 41,351 bytes; SHA-256 `d7179c62537f59b261fcfebc3a1af9a7e339e572295623809e0021ed2528465f`.
+- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-18.zip` — 13,337 bytes; 21 entries; CRC PASS; SHA-256 `8fdc4638791964c1621ae46aa83f285895abdf5f76f1d25fe0dab7929389bcfe`.
+- `ERRATA_v11.0.0.0_2026-11-18.md` records the stale WebSocket token statement and the 54-vs-56 JSON count discrepancy. It is an errata note only; the published v11 ZIP remains unchanged.
+- Current verified complete source baseline remains v11.0.0.0; v12.0.0.0 remains blocked.
+- 16/16 regression entries passed individually; aggregate runner timed out after 300 seconds.
+- No source/config/art/API/protocol/Schema changes; no new formal version, complete project archive or network patch was created.
