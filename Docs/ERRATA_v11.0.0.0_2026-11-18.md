@@ -1,27 +1,29 @@
-# v11.0.0.0 Documentation Errata — 2026-11-18
+# v11.0.0.0 Documentation Errata — Reconciled 2026-11-19
 
-Status: corrective maintenance note only; the published v11.0.0.0 ZIP remains immutable.
+Status: documentation/metadata maintenance record. Formal version remains v11.0.0.0.
 
-## ERR-DOC-001 — WebSocket token transport statement
+## Prior ERR-DOC-001 — WebSocket token statement (WITHDRAWN)
 
-`Server/README.md` contains an older statement that the WebSocket handshake still uses a query-string token. The current v11.0.0.0 server/client contract and the passing `deep_source_hardening_regression_test.py` establish that the WebSocket handshake uses `Authorization: Bearer <token>` and query-string tokens are rejected.
+The 2026-11-18 note classified a sentence in Server/README.md as stale. Reinspection shows that sentence is inside the **v6.0.3.1 historical maintenance record**, not the current protocol contract. The current protocol section later in the same README requires Authorization: Bearer <token> and rejects query-string tokens; the server implementation and regression tests agree. The prior classification was incorrect and is withdrawn. Historical release history is left intact.
 
-Recommended replacement:
+## DOC-003 — JSON inventory count (CORRECTED)
 
-> HTTP API and WebSocket handshake authenticate client sessions through the `Authorization: Bearer` header. Query-string tokens are rejected.
+The archive contains 56 JSON files, and all 56 parse successfully. Updated:
+- VALIDATION_REPORT_v11.0.0.0.json
+- MAINTENANCE_STATUS_v11.0.0.0.json
+- TEST_RUN_REPORT_v11.0.0.0.txt
+- MILESTONE_REPORT_v11.0.0.0.md
 
-The original v11 archive was not modified; this correction is recorded for the next formal source package.
+All counts now state 56.
 
-## ERR-DOC-002 — JSON file count
+## DOC-004 — Network patch payload count (CORRECTED)
 
-`VALIDATION_REPORT_v11.0.0.0.json` and `MAINTENANCE_STATUS_v11.0.0.0.json` state 54 JSON files. A fresh recursive scan of the 490-entry archive found 56 JSON files; all 56 parse successfully.
+The network patch contains 31 payload files plus PATCH_MANIFEST_v11.0.0.0.json and PATCH_SHA256SUMS_v11.0.0.0.txt, totaling 33 ZIP entries. Updated the validation and maintenance status counts from 30 to 31. Rebuilt patch and integration manifests/checksum files.
 
-Update both counts to 56 in the next formal package and regenerate affected manifests/checksums if the files are changed.
+## Bug counter and release boundary
 
-## Deployment note — Secure Cookie
+metadata_hygiene_corrections increased from 1 to 3. Runtime bugs newly registered/fixed/open remain 0. No runtime source, configuration, art, API, protocol or Schema changed. No formal version increment was made.
 
-`admin_cookie_secure=false` is the documented local HTTP development default. Production TLS/reverse-proxy deployment must enable Secure Cookie or pass the trusted HTTPS forwarding signal as described by `Server/ADMIN_SECRET_SETUP.md`. This is not classified as a runtime defect in the current local configuration.
+## Deployment note
 
-## Release boundary
-
-No code, API, protocol, Schema, configuration, or art asset was modified in this maintenance run. No four-segment version increment was made. This errata is a documentation record, not a v11.0.0.1 release and not a replacement source archive.
+admin_cookie_secure=false remains the documented local HTTP default. Production TLS/reverse-proxy deployment must enable Secure Cookie or use the trusted HTTPS forwarding arrangement documented in Server/ADMIN_SECRET_SETUP.md.
