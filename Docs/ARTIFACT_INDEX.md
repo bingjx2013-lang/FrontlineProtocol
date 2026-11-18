@@ -1,55 +1,27 @@
 # Latest Verified Frontline Artifacts
 
-Status date: **2026-11-17**.
+Status date: **2026-11-19**.
 
 This index records artifacts verified in the current file workspace. It does **not** mean the binary files have been uploaded to this GitHub repository.
 
-## Current complete source and network baseline
+## Current complete source and network package
 
-- `FrontlineProtocol_v11.0.0.0_Complete.zip` — 1,432,078 bytes; 490 entries; CRC PASS; SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`.
-- `FrontlineProtocol_v11.0.0.0_Network_And_Runtime_Patch.zip` — 132,041 bytes; 33 entries; CRC PASS; SHA-256 `0e9478cc73271e5b51106111c2b8b15347d63557bcf474224ed30331a29088d5`.
-- `FrontlineProtocol_v11.0.0.0_Update_Log.docx` — 39,777 bytes; SHA-256 `a53dc56577f8eb7a7ed8fc56bf7967b1785fe51c336109c2eedd36239992cbf0`.
+- FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-19.zip — 1,432,235 bytes; 490 entries; CRC PASS; SHA-256 f9db9054d49e62c72137045848ac70af55df1a451734ad0a221d96700772a6fa.
+- FrontlineProtocol_v11.0.0.0_Network_And_Runtime_Patch_Maintenance_2026-11-19.zip — 132,194 bytes; 33 entries; 31 payload files; CRC PASS; SHA-256 3b5c4be9e4909fb3756bf62c594bf3d3b0b617c5911a025dd807c1ca86637afc.
+- FrontlineProtocol_v11.0.0.0_Maintenance_Update_Log_2026-11-19.docx — 39,091 bytes; SHA-256 35bb8b7a6e72bcf0e8b5c9ed044c6bc40e9d3983a08266336a8f62bfb6f1c630.
+- FrontlineProtocol_Daily_Maintenance_Report_2026-11-19.docx — 41,406 bytes; SHA-256 3f960c03a1070776148580f8a45150d0a5afae05140ebd465d366c9694bceeb6.
+- FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-19.zip — 72,805 bytes; 47 entries; CRC PASS; SHA-256 339b07c5a4ccd9998e48ccd75773708bf5e87fdbd2d0dfd01b561cfedc6247ca.
 
-## Daily maintenance reports and evidence
+## Maintenance result
 
-- `FrontlineProtocol_Daily_Maintenance_Report_2026-11-15.docx` — 39,655 bytes; SHA-256 `e8bcbcf8de05c4ad9269572a26c5f5ff163e79983f4fb0a478c6f9c83cb93a50`.
-- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-15.zip` — 44,606 bytes; 8 entries; CRC PASS; SHA-256 `cb9ea540d9dc1dc6679b1cf334872b95c789ad213e408b45ca416ebd479f7f57`.
-- `FrontlineProtocol_Daily_Maintenance_Report_2026-11-16.docx` — 40,440 bytes; SHA-256 `1a2b367eec7bccebc7f44b1ec4296c0e9268c757774592a7d064fac14ee0b762`.
-- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-16.zip` — 50,558 bytes; CRC PASS; SHA-256 `26aba7c5d0549f5df7dedec87038ad5f1ee0bdae4443b7bf1bef04c7f0938db4`.
-- `FrontlineProtocol_Daily_Maintenance_Report_2026-11-17.docx` — 41,222 bytes; SHA-256 `65a2b05051c8ba161c8be8fed8346163a4382e16f7d602f7ec1d56c9ff19e224`.
-- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-17.zip` — 26 entries; CRC PASS; binary remains in the ChatGPT file workspace (not uploaded to this repository).
+- Latest verified complete source version: **v11.0.0.0**; v12.0.0.0 remains blocked.
+- 16/16 regression entry points passed individually after metadata corrections.
+- Static integrity: 488/488 integration manifest; 489/489 SHA256SUMS; 56/56 JSON; 145/145 Unity meta pairs; 145 unique GUIDs; 28 OBJ files / 928 faces / zero invalid indices; 48 C# structural checks.
+- Two metadata discrepancies corrected: JSON count 54→56 and network patch payload count 30→31. metadata_hygiene_corrections = 3.
+- No runtime code, config, art, API, protocol or Schema change. Formal version remains v11.0.0.0.
+- The 2026-11-18 WebSocket Errata claim was withdrawn because the cited sentence is a historical v6.0.3.1 note; the current protocol section is correct.
+- No Unity Editor/Play Mode/CI/APK/Android/Windows/production TLS/WSS/pressure/soak acceptance was executed.
 
 ## v12 candidate and blocker materials
 
-The following are candidate/audit evidence only and do not establish a complete v12 source release:
-
-- `FrontlineProtocol_v12.0.0.0_Rebase_Blocker_Report.docx`
-- `FrontlineProtocol_v12.0.0.0_Candidate_Network_Source_Repair_Patch.zip`
-- `CANDIDATE_SOURCE_CHANGES.diff`
-- `FrontlineProtocol_v12.0.0.0_Deep_Source_Audit_Report.docx`
-- `FrontlineProtocol_v12.0.0.0_Update_Log_Audit_Run.docx`
-- `FrontlineProtocol_v12.0.0.0_Source_Audit_Evidence_Bundle.zip`
-- `VERSION_DECISION_v12.0.0.0.md`
-- `TEST_RESULTS_v12.0.0.0.txt`
-- `DELIVERY_VALIDATION.json`
-- `SHA256SUMS_v12.0.0.0_Audit_Run.txt`
-
-No complete v12 Client/Hub Server/Admin source tree, 12-group art overlay, or `FieldOperationsCatalog_v12.json` was found in the current accessible file set.
-
-## Current maintenance result
-
-- v11.0.0.0 remains the latest verified complete source baseline.
-- 16/16 regression entry points passed individually; aggregate one-shot runner was incomplete due execution-window timeout.
-- Static integrity: 488/488 integration-manifest files, 489/489 SHA256SUMS, 56/56 JSON parse, 18/18 Python AST/compileall, 145/145 Unity meta pairs, 145 unique GUIDs, 28 OBJ files / 928 faces / zero invalid indices, 48 C# structural checks.
-- No code/config/art/API/schema change was made; no new formal version or network patch was created.
-- This repository remains a test mirror with text-only metadata; the formal main repository remains `We-MCS/Project_Frontline-Protocol`.
-
-
-## Daily maintenance — 2026-11-18
-
-- `FrontlineProtocol_Daily_Maintenance_Report_2026-11-18.docx` — 41,351 bytes; SHA-256 `d7179c62537f59b261fcfebc3a1af9a7e339e572295623809e0021ed2528465f`.
-- `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-18.zip` — 13,337 bytes; 21 entries; CRC PASS; SHA-256 `8fdc4638791964c1621ae46aa83f285895abdf5f76f1d25fe0dab7929389bcfe`.
-- `ERRATA_v11.0.0.0_2026-11-18.md` records the stale WebSocket token statement and the 54-vs-56 JSON count discrepancy. It is an errata note only; the published v11 ZIP remains unchanged.
-- Current verified complete source baseline remains v11.0.0.0; v12.0.0.0 remains blocked.
-- 16/16 regression entries passed individually; aggregate runner timed out after 300 seconds.
-- No source/config/art/API/protocol/Schema changes; no new formal version, complete project archive or network patch was created.
+Audit reports and candidate diffs are evidence only. No complete v12 Client/Hub Server/Admin source tree, 12-group art overlay or FieldOperationsCatalog_v12.json was found in the accessible file set.
