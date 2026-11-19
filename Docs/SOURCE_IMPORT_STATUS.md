@@ -4,30 +4,32 @@ Repository: bingjx2013-lang/FrontlineProtocol
 Branch: main
 Role: **user-owned test mirror; not the formal main repository**.
 
-## Current verified source baseline — 2026-11-19
+## Current verified source baseline — 2026-11-20
 
-The latest complete source package verified in the current ChatGPT file workspace is a documentation/metadata maintenance refresh of **v11.0.0.0**:
+The latest complete source package verified in the current ChatGPT file workspace is a maintenance refresh of **v11.0.0.0**:
 
 | Artifact | Size | SHA-256 | Verification |
 |---|---:|---|---|
-| FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-19.zip | 1,432,235 bytes | f9db9054d49e62c72137045848ac70af55df1a451734ad0a221d96700772a6fa | 490 entries; ZIP CRC PASS |
-| FrontlineProtocol_v11.0.0.0_Network_And_Runtime_Patch_Maintenance_2026-11-19.zip | 132,194 bytes | 3b5c4be9e4909fb3756bf62c594bf3d3b0b617c5911a025dd807c1ca86637afc | 33 entries; 31 payload files; ZIP CRC PASS |
-| FrontlineProtocol_v11.0.0.0_Maintenance_Update_Log_2026-11-19.docx | 39,091 bytes | 35bb8b7a6e72bcf0e8b5c9ed044c6bc40e9d3983a08266336a8f62bfb6f1c630 | Word update log |
-| FrontlineProtocol_Daily_Maintenance_Report_2026-11-19.docx | 41,406 bytes | 3f960c03a1070776148580f8a45150d0a5afae05140ebd465d366c9694bceeb6 | Word daily report |
-| FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-19.zip | 72,805 bytes | 339b07c5a4ccd9998e48ccd75773708bf5e87fdbd2d0dfd01b561cfedc6247ca | 47 entries; CRC PASS |
+| FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-20.zip | 1,517,723 bytes | ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e | 497 entries; ZIP CRC PASS |
+| FrontlineProtocol_v11.0.0.0_Network_Regression_Test_Patch_2026-11-20.zip | 41,530 bytes | c4fa943e9a42f86885522aff3a1b33c067c19902454d090cc6200f0ee4a556c3 | 5 entries; ZIP CRC PASS; test-harness only |
+| FrontlineProtocol_v11.0.0.0_Maintenance_Update_Log_2026-11-20.docx | 39,501 bytes | 19aad9857b38a03e0ef36997efed869c1d53412feed8067cafecd293d71c2ecf | Word update log |
+| FrontlineProtocol_Daily_Maintenance_Report_2026-11-20.docx | 39,949 bytes | 36ebfcf2b0b6e7c4a01665c93fc2d51d0e435636b1659d740d367ad674f6fe56 | Word daily report |
+| FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-20.zip | 143,359 bytes | 02fa5c719c07173d49227933cfc469f0c7a765447401f7648709eb7541023ba5 | 19 entries; ZIP CRC PASS |
 
 These binary artifacts are available in the current file workspace, **but are not committed to this GitHub repository**. This repository contains metadata/index text only; do not interpret this inventory as a source upload.
 
-## 2026-11-19 maintenance reconciliation
+## 2026-11-20 maintenance reconciliation
 
-- 16/16 regression entry points passed individually after the metadata corrections (12 self-contained + 4 isolated-server).
-- Python compileall: 18 source files; exit code 0. JSON: 56/56 parse. Unity .meta: 145/145 pairs; 145 unique GUIDs. OBJ: 28 files, 1,320 vertices, 928 faces, zero invalid indices. C# structural delimiter scan: 48 files, no structural errors; this is not C# compilation.
-- INTEGRATION_MANIFEST: 488/488 exact; SHA256SUMS: 489/489 exact.
-- Corrected two metadata count errors: JSON inventory 54→56; network patch payload 30→31. The patch contains 31 payload files plus PATCH_MANIFEST and PATCH_SHA256SUMS, totaling 33 entries.
-- metadata_hygiene_corrections counter is now 3; runtime bug new/fixed/open remain 0.
-- The prior 2026-11-18 WebSocket Errata classification is withdrawn: the query-token sentence is in the v6.0.3.1 historical section. The current protocol section, server implementation and regression tests consistently require Authorization: Bearer and reject query tokens.
-- No runtime source, config, art, API, protocol or Schema changed. Formal version remains **v11.0.0.0**.
-- Unity Editor, Play Mode, CI, APK/AAB, Android device, Windows host, production TLS/WSS and pressure/soak acceptance were not executed.
+- 16/16 regression entry points passed individually after the test-harness correction (12 self-contained + 4 isolated-server).
+- The corrected `maintenance_regression_test.py` passed five additional consecutive standalone runs.
+- The original test read only the next WebSocket frame after sending a command; a periodic `snapshot` could arrive first. The test now skips only snapshot frames while waiting for the expected response, with a five-second deadline. Other unexpected events still fail.
+- Runtime source/config/art/API/protocol/Schema unchanged. This is not a runtime bug fix and does not increment the formal version.
+- Python compileall: 18 files, exit code 0. JSON: 57/57 parse.
+- Unity .meta: 145/145 pairs; 145 unique GUIDs. OBJ: 28 files, 1,320 vertices, 928 faces, zero invalid indices. C# delimiter scan: 48 files; not a C# compile.
+- INTEGRATION_MANIFEST: 495/495 exact; SHA256SUMS: 496/496 exact.
+- Version markers in Client, Unity bundle, Hub Server config, Admin Panel and PowerShell script remain v11.0.0.0.
+- Aggregate `Tests/run_regression_suite.py` exceeded the 300-second execution window; the 16/16 count is based on individual entry-point results, not a completed aggregate run.
+- Unity Editor, Play Mode, CI, APK/AAB, Android device, Windows host, production TLS/WSS, pressure/soak acceptance were not executed.
 
 ## GitHub repository status
 
