@@ -1,14 +1,18 @@
 # Frontline Protocol Version Baseline
 
 - Formal release version: **v11.0.0.0** (A=11, B=0, C=0, D=0).
-- Latest verified complete package in the ChatGPT file workspace: **v11.0.0.0 documentation/metadata maintenance refresh**, verified 2026-11-19.
-- Complete package: FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-19.zip
-- Size: 1,432,235 bytes; 490 ZIP entries; CRC PASS.
-- SHA-256: f9db9054d49e62c72137045848ac70af55df1a451734ad0a221d96700772a6fa
-- Network/runtime patch: FrontlineProtocol_v11.0.0.0_Network_And_Runtime_Patch_Maintenance_2026-11-19.zip
-- Size: 132,194 bytes; 33 ZIP entries; 31 payload files; CRC PASS.
-- Patch SHA-256: 3b5c4be9e4909fb3756bf62c594bf3d3b0b617c5911a025dd807c1ca86637afc
-- The 2026-11-19 refresh corrects package documentation/metadata only. Runtime source, configuration, art, API, protocol and Schema are unchanged. No new feature or runtime bug fix; formal version remains v11.0.0.0.
-- This record does not claim that the ZIPs have been uploaded to this GitHub repository. The repository remains a text-only test mirror.
-- Current v12 status: **BLOCKED** — complete v12 Client/Hub Server/Admin source tree, 12-group art overlay and v12 manifests are not accessible.
-- Do not promote a v11 package or a candidate patch as a completed v12 release.
+- Latest verified complete package in the ChatGPT file workspace: **v11.0.0.0 maintenance refresh, 2026-11-20**.
+- Complete package: FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-20.zip
+- Size: 1,517,723 bytes; 497 ZIP entries; CRC PASS.
+- SHA-256: ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e
+- Network regression test patch: FrontlineProtocol_v11.0.0.0_Network_Regression_Test_Patch_2026-11-20.zip
+- Size: 41,530 bytes; 5 ZIP entries; CRC PASS.
+- Patch SHA-256: c4fa943e9a42f86885522aff3a1b33c067c19902454d090cc6200f0ee4a556c3
+- Update log: 39,501 bytes; SHA-256 19aad9857b38a03e0ef36997efed869c1d53412feed8067cafecd293d71c2ecf
+- Daily report: 39,949 bytes; SHA-256 36ebfcf2b0b6e7c4a01665c93fc2d51d0e435636b1659d740d367ad674f6fe56
+- Evidence archive: 143,359 bytes; 19 entries; CRC PASS; SHA-256 02fa5c719c07173d49227933cfc469f0c7a765447401f7648709eb7541023ba5
+- The 2026-11-20 change fixes only a WebSocket regression test harness race caused by periodic snapshot frames. No runtime source, config, art, API, protocol or Schema changed. No new runtime bug was registered/fixed; formal version remains v11.0.0.0.
+- The test patch is not a runtime network patch. It contains the corrected test script, patch README/manifests and Word update log.
+- These binary artifacts are available in the ChatGPT file workspace, **not committed to this GitHub repository**. This repository remains a text-only test mirror.
+- Current v12 status: **BLOCKED** — complete v12 Client/Hub Server/Admin source tree, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests are not accessible.
+- Do not promote v11 or a candidate patch as a completed v12 release.
