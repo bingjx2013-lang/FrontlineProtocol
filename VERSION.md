@@ -18,3 +18,14 @@
 - These binary artifacts are available in the ChatGPT file workspace, **not committed to this GitHub repository**. This repository remains a text-only test mirror.
 - Current v12 status: **BLOCKED** — complete v12 Client/Hub Server/Admin source tree, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests are not accessible.
 - Do not promote v11 or a candidate patch as a completed v12 release.
+
+
+## 2026-11-21 follow-up run 7
+- Regression: 12 self-contained + 4 isolated-server entry points = **16/16 individually PASS**; maintenance regression repeated **5/5 PASS**.
+- One-shot aggregate runner remains **INCOMPLETE** because no final summary returned in the available execution window; this is not classified as PASS or FAIL.
+- Static recheck: 497-entry complete ZIP CRC PASS; 495/495 integration manifest; 496/496 SHA256SUMS; JSON 57/57; Python compileall 18 files; Unity .meta 145/145 and unique GUIDs; OBJ 28 files with zero invalid indices; C# 48-file string/comment-aware delimiter scan balanced (not compilation).
+- No source/runtime/config/art/API/protocol/Schema change; runtime bug counts new/fixed/open remain 0/0/0; formal version remains **v11.0.0.0**.
+- Follow-up report: `FrontlineProtocol_Daily_Maintenance_Followup_2026-11-21_Run7.docx` — 39,255 bytes; SHA-256 `ee8afedcdf74827518a7a247bfb9247bae5e1d2cd83a423d957af1fec6884115`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-21_Run7.docx` — 37,858 bytes; SHA-256 `9ce0598e1125fe09e68a37307e94e46d626d39a84b4445474aa24a0960863562`.
+- Evidence archive: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-21_Run7.zip` — 88,231 bytes; 18 entries; CRC PASS; SHA-256 `cf37c619b851c9fb5af588b188141a227a2d43bae4be6fc09db21823531b0843`.
+- v12.0.0.0 remains blocked by missing complete source, art overlay and manifests.
