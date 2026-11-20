@@ -31,7 +31,7 @@ This index records artifacts verified in the current file workspace. It does **n
 ## 2026-11-21 follow-up run 7
 - Follow-up report: `FrontlineProtocol_Daily_Maintenance_Followup_2026-11-21_Run7.docx` — 39,255 bytes; SHA-256 `ee8afedcdf74827518a7a247bfb9247bae5e1d2cd83a423d957af1fec6884115`.
 - No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-21_Run7.docx` — 37,858 bytes; SHA-256 `9ce0598e1125fe09e68a37307e94e46d626d39a84b4445474aa24a0960863562`.
-- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-21_Run7.zip` — 88,231 bytes; 18 entries; CRC PASS; SHA-256 `cf37c619b851c9fb5af588b188141a227a2d43bae4be6fc09db21823531b0843`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-21_Run7.zip` — 90,810 bytes; 19 entries; CRC PASS; SHA-256 `fa760953991c4d6acdbd882052f9cd36ef0bb2584f42907d8a5f1c3e645f6c94`.
 - 12 self-contained + 4 isolated-server regression entries passed in two batches; maintenance regression repeated 5/5. One-shot aggregate runner INCOMPLETE; no code changes and no version increment.
 - Static integrity recheck: 497-entry ZIP CRC PASS; integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18; Unity .meta 145/145; OBJ 28; C# 48 lexical structure scan (not compilation).
 - No new full project package or runtime network patch was created. v12 remains blocked.
