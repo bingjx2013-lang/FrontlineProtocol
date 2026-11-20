@@ -9,10 +9,12 @@
 - Size: 41,530 bytes; 5 ZIP entries; CRC PASS.
 - Patch SHA-256: c4fa943e9a42f86885522aff3a1b33c067c19902454d090cc6200f0ee4a556c3
 - Update log: 39,501 bytes; SHA-256 19aad9857b38a03e0ef36997efed869c1d53412feed8067cafecd293d71c2ecf
-- Daily report: 39,949 bytes; SHA-256 36ebfcf2b0b6e7c4a01665c93fc2d51d0e435636b1659d740d367ad674f6fe56
-- Evidence archive: 143,359 bytes; 19 entries; CRC PASS; SHA-256 02fa5c719c07173d49227933cfc469f0c7a765447401f7648709eb7541023ba5
-- The 2026-11-20 change fixes only a WebSocket regression test harness race caused by periodic snapshot frames. No runtime source, config, art, API, protocol or Schema changed. No new runtime bug was registered/fixed; formal version remains v11.0.0.0.
-- The test patch is not a runtime network patch. It contains the corrected test script, patch README/manifests and Word update log.
+- Daily report 2026-11-20: 39,949 bytes; SHA-256 36ebfcf2b0b6e7c4a01665c93fc2d51d0e435636b1659d740d367ad674f6fe56
+- Evidence archive 2026-11-20: 143,359 bytes; 19 entries; CRC PASS; SHA-256 02fa5c719c07173d49227933cfc469f0c7a765447401f7648709eb7541023ba5
+- Last verification: **2026-11-21**. The 2026-11-20 complete package was rechecked: 16/16 regression entries passed individually; maintenance regression repeated 5/5; 495/495 integration manifest, 496/496 SHA256SUMS, 57/57 total JSON parse, 145/145 Unity meta pairs, 28 OBJ with zero invalid indices, 48 C# structural scans, and 18 Python files compileall passed.
+- Aggregate Tests/run_regression_suite.py did not complete within the 300-second execution window; it is INCOMPLETE, not PASS. All 16 entries were run individually.
+- No project source/config/art/API/protocol/Schema change was made on 2026-11-21. No new complete project package or runtime network patch was created. Formal version remains v11.0.0.0.
+- The 2026-11-20 patch is test-harness only, not a runtime network patch. The 2026-11-19 package remains the latest runtime network patch.
 - These binary artifacts are available in the ChatGPT file workspace, **not committed to this GitHub repository**. This repository remains a text-only test mirror.
 - Current v12 status: **BLOCKED** — complete v12 Client/Hub Server/Admin source tree, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests are not accessible.
 - Do not promote v11 or a candidate patch as a completed v12 release.
