@@ -4,9 +4,9 @@ Repository: bingjx2013-lang/FrontlineProtocol
 Branch: main
 Role: **user-owned test mirror; not the formal main repository**.
 
-## Current verified source baseline — 2026-11-20
+## Current verified source baseline — 2026-11-21
 
-The latest complete source package verified in the current ChatGPT file workspace is a maintenance refresh of **v11.0.0.0**:
+The latest complete source package verified in the current ChatGPT file workspace remains a maintenance refresh of **v11.0.0.0**, dated 2026-11-20.
 
 | Artifact | Size | SHA-256 | Verification |
 |---|---:|---|---|
@@ -18,22 +18,24 @@ The latest complete source package verified in the current ChatGPT file workspac
 
 These binary artifacts are available in the current file workspace, **but are not committed to this GitHub repository**. This repository contains metadata/index text only; do not interpret this inventory as a source upload.
 
-## 2026-11-20 maintenance reconciliation
+## 2026-11-21 verification
 
-- 16/16 regression entry points passed individually after the test-harness correction (12 self-contained + 4 isolated-server).
-- The corrected `maintenance_regression_test.py` passed five additional consecutive standalone runs.
-- The original test read only the next WebSocket frame after sending a command; a periodic `snapshot` could arrive first. The test now skips only snapshot frames while waiting for the expected response, with a five-second deadline. Other unexpected events still fail.
-- Runtime source/config/art/API/protocol/Schema unchanged. This is not a runtime bug fix and does not increment the formal version.
-- Python compileall: 18 files, exit code 0. JSON: 57/57 parse.
-- Unity .meta: 145/145 pairs; 145 unique GUIDs. OBJ: 28 files, 1,320 vertices, 928 faces, zero invalid indices. C# delimiter scan: 48 files; not a C# compile.
-- INTEGRATION_MANIFEST: 495/495 exact; SHA256SUMS: 496/496 exact.
-- Version markers in Client, Unity bundle, Hub Server config, Admin Panel and PowerShell script remain v11.0.0.0.
-- Aggregate `Tests/run_regression_suite.py` exceeded the 300-second execution window; the 16/16 count is based on individual entry-point results, not a completed aggregate run.
-- Unity Editor, Play Mode, CI, APK/AAB, Android device, Windows host, production TLS/WSS, pressure/soak acceptance were not executed.
+- 16/16 regression entry points passed individually (12 self-contained + 4 isolated-server); corrected maintenance regression passed five additional consecutive runs (5/5).
+- Aggregate `Tests/run_regression_suite.py` did not complete within 300 seconds and emitted no final summary; recorded INCOMPLETE, not PASS.
+- Complete ZIP: 497 entries, CRC PASS. Test-only patch ZIP: 5 entries, CRC PASS; sole payload byte-identical to the full package.
+- INTEGRATION_MANIFEST: 495/495 exact. SHA256SUMS: 496/496 exact.
+- 57 JSON files parsed successfully: 56 project JSON files plus the integration manifest itself.
+- Python compileall: 18 files, exit 0. Unity .meta: 145/145 pairs, 145 unique GUIDs. OBJ: 28 files, 1,320 vertices, 928 faces, zero invalid indices. C# structural scan: 48 files; not a C# compile.
+- Client VERSION, Unity bundleVersion, Hub Server config, Admin Panel banner, PowerShell setup banner and VERSION.md all agree on v11.0.0.0.
+- No project source/runtime/config/art/API/protocol/Schema change this run; formal version remains v11.0.0.0; runtime bug counts new/fixed/open = 0/0/0.
+- The 2026-11-20 patch is test-harness only, not a runtime network patch. The 2026-11-19 package remains the latest runtime network patch.
+- Daily report: FrontlineProtocol_Daily_Maintenance_Report_2026-11-21.docx, 40,802 bytes, SHA-256 5a198d1cc98d691c04bcaa03e0677f5667833a93d1a6af2093b220fa06321835.
+- No-code-change update log: FrontlineProtocol_v11.0.0.0_Maintenance_No_Code_Change_Log_2026-11-21.docx, 38,765 bytes, SHA-256 8940cbf73f517325d5023f4d111c5d6db6e7219f77ed14cf700cca80943130fd.
+- Evidence ZIP: FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-21.zip, 26 entries, CRC PASS, SHA-256 4d4ecd5856d28243b3be082e4c1c22829b40e2b8063fb543834d343480e94b7f.
 
 ## GitHub repository status
 
-- Formal main repository: We-MCS/Project_Frontline-Protocol; main contains only README, size 0 KB, current connector permission pull=true / push=false.
+- Formal main repository: We-MCS/Project_Frontline-Protocol; main contains only README.md, size 0 KB, current connector permission pull=true / push=false.
 - This test mirror remains text-only. No complete source archive has been committed to either repository in this run.
 
 ## v12.0.0.0 status
