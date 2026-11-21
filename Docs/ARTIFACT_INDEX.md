@@ -1,6 +1,6 @@
 # Latest Verified Frontline Artifacts
 
-Status date: **2026-11-21**.
+Status date: **2026-11-22**.
 
 This index records artifacts verified in the current file workspace. It does **not** mean the binary files have been uploaded to this GitHub repository.
 
@@ -35,3 +35,13 @@ This index records artifacts verified in the current file workspace. It does **n
 - 12 self-contained + 4 isolated-server regression entries passed in two batches; maintenance regression repeated 5/5. One-shot aggregate runner INCOMPLETE; no code changes and no version increment.
 - Static integrity recheck: 497-entry ZIP CRC PASS; integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18; Unity .meta 145/145; OBJ 28; C# 48 lexical structure scan (not compilation).
 - No new full project package or runtime network patch was created. v12 remains blocked.
+
+
+## 2026-11-22 daily maintenance run 8
+- Daily report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-22_Run8.docx` — 40,342 bytes; SHA-256 `9ae526e2388a3391bd692932928621074478bce474b3ad58f1a7053fa83e3b57`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-22_Run8.docx` — 38,189 bytes; SHA-256 `5f6b7e5dd8e177a28475433fef5044dc5d6d95c179544f2d2c79f2dad442c7bc`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-22_Run8.zip` — 84,395 bytes; 16 entries; CRC PASS; SHA-256 `c180d33275943b6cccbdf3563ae950e82a6de4c9ef256d488304bc14c4504067`.
+- Regression: 12/12 self-contained + 4/4 isolated-server PASS; maintenance repeat 5/5; admin cookie probes 3/3. Aggregate runner INCOMPLETE after two time-limited attempts; independent results passed.
+- Static integrity: 497-entry complete ZIP CRC PASS; 495/495 integration manifest; 496/496 SHA256SUMS; JSON 57/57; Python 18; Unity .meta 145/145; OBJ 28; C# 48-file lexical structure scan (not compilation).
+- No source/runtime/config/art/API/protocol/Schema changes; formal version remains v11.0.0.0; runtime bug counts new/fixed/open = 0/0/0.
+- No new complete project ZIP or runtime network patch was generated. v12 remains blocked.
