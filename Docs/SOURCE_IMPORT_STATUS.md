@@ -4,7 +4,7 @@ Repository: bingjx2013-lang/FrontlineProtocol
 Branch: main
 Role: **user-owned test mirror; not the formal main repository**.
 
-## Current verified source baseline — 2026-11-21
+## Current verified source baseline — 2026-11-22
 
 The latest complete source package verified in the current ChatGPT file workspace remains a maintenance refresh of **v11.0.0.0**, dated 2026-11-20.
 
@@ -47,3 +47,24 @@ These binary artifacts are available in the current file workspace, **but are no
 - v12 VERSION, BUG_FIX_COUNTER, BUG_REGISTER, INTEGRATION_MANIFEST and SHA256SUMS.
 
 Candidate diffs and audit reports are not substitutes for a complete v12 source tree.
+
+
+## 2026-11-22 verification — run 8
+
+- The latest complete source package remains `FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-20.zip` (1,517,723 bytes; 497 entries; CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`).
+- 12/12 self-contained and 4/4 isolated-server regression entries passed individually; maintenance regression repeated 5/5; admin cookie probes 3/3.
+- Aggregate runner did not return a final summary after two time-limited attempts; status INCOMPLETE, not PASS. QA-AGG-001 is a test-harness/orchestration observation, not a runtime bug.
+- Static integrity: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python compileall 18 files; Unity .meta 145/145 and 145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / 0 invalid indices; C# lexical scan 48 files (not compilation).
+- Client, Unity bundleVersion, Hub config, Admin Panel and PowerShell banner agree on v11.0.0.0; API Schema v1; Realtime Protocol v1.
+- `admin_cookie_secure=false` remains the documented local HTTP default; direct Secure config and trusted proxy HTTPS header probes passed. Production TLS/WSS remains untested.
+- No source/runtime/config/art/API/protocol/Schema changes; no version increment; runtime bug counts new/fixed/open = 0/0/0.
+- Run 8 daily report: 40,342 bytes, SHA-256 `9ae526e2388a3391bd692932928621074478bce474b3ad58f1a7053fa83e3b57`.
+- Run 8 no-code update log: 38,189 bytes, SHA-256 `5f6b7e5dd8e177a28475433fef5044dc5d6d95c179544f2d2c79f2dad442c7bc`.
+- Run 8 evidence ZIP: 16 entries, CRC PASS, SHA-256 `c180d33275943b6cccbdf3563ae950e82a6de4c9ef256d488304bc14c4504067`.
+
+## Current GitHub source import status — 2026-11-22
+
+- Formal main repository `We-MCS/Project_Frontline-Protocol`: one 28-byte README, size 0 KB, current connection `pull=true / push=false`.
+- Legacy `We-MCS/Frontline-Protocol`: one 3-byte source stub in its recursive tree.
+- This test mirror contains 15 text/documentation entries only; no Client/Server/Admin source tree. Binary artifacts remain in the ChatGPT file workspace and are not committed here.
+
