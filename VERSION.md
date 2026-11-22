@@ -41,3 +41,12 @@
 - No-code update log: 38,189 bytes; SHA-256 `5f6b7e5dd8e177a28475433fef5044dc5d6d95c179544f2d2c79f2dad442c7bc`.
 - Evidence archive: 84,395 bytes; 16 entries; CRC PASS; SHA-256 `c180d33275943b6cccbdf3563ae950e82a6de4c9ef256d488304bc14c4504067`.
 - v12.0.0.0 remains blocked by missing complete source tree, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests.
+
+
+## 2026-11-23 periodic source audit — run 9
+- The current conversation workspace contains a v11.0.0.1 candidate complete package (1,576,260 bytes; 508 entries; CRC PASS; SHA-256 c918f99eb4370cc0814bea415a88761907597303d01b7b937a554c30444a243d) and its runtime network patch (133,688 bytes; 30 entries; CRC PASS; SHA-256 995e06544b226c842b738653dc0354d2674d3b9ec7910060689342dfa432f499).
+- Candidate regression suite: 17/17 PASS; Python compileall/AST 19/19; JSON 61/61; integration manifest 506/506; SHA256SUMS 507/507; Unity .meta 145/145; OBJ 28 with zero invalid indices; C# 48-file lexical scan (not compilation); admin cookie probes 3/3.
+- Baseline conflict remains: run 8 above records formal v11.0.0.0 and a 2026-11-20 497-entry complete package (SHA-256 ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e), but that binary is not accessible in the current file workspace/Library. The available v11.0.0.1 package is based on the 2026-11-15 490-entry v11.0.0.0 baseline; its rebase status against the 11/20 refresh cannot be confirmed.
+- Therefore formal version remains v11.0.0.0 per the latest repository record; v11.0.0.1 is retained as a verified candidate only. No v11.0.0.2 is created. Runtime bug counts new/fixed/open this run = 0/0/0.
+- Formal main repository remains README-only and push=false; no binary source or patch has been committed. This mirror update is documentation-only.
+- v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and manifests.
