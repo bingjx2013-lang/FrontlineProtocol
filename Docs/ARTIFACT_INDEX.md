@@ -45,3 +45,14 @@ This index records artifacts verified in the current file workspace. It does **n
 - Static integrity: 497-entry complete ZIP CRC PASS; 495/495 integration manifest; 496/496 SHA256SUMS; JSON 57/57; Python 18; Unity .meta 145/145; OBJ 28; C# 48-file lexical structure scan (not compilation).
 - No source/runtime/config/art/API/protocol/Schema changes; formal version remains v11.0.0.0; runtime bug counts new/fixed/open = 0/0/0.
 - No new complete project ZIP or runtime network patch was generated. v12 remains blocked.
+
+
+## 2026-11-23 periodic source audit — run 9
+- Available candidate complete project: FrontlineProtocol_v11.0.0.1_Complete.zip — 1,576,260 bytes; 508 entries; CRC PASS; SHA-256 c918f99eb4370cc0814bea415a88761907597303d01b7b937a554c30444a243d.
+- Available candidate network/runtime patch: FrontlineProtocol_v11.0.0.1_Network_And_Runtime_Patch.zip — 133,688 bytes; 30 entries; CRC PASS; SHA-256 995e06544b226c842b738653dc0354d2674d3b9ec7910060689342dfa432f499.
+- Word source audit: FrontlineProtocol_v11.0.0.1_Source_Audit_2026-11-23.docx — 40,174 bytes; SHA-256 4886683afaf09d6828bfefa7f58e966742b3445257d445ad1f16767e2993b617.
+- Word update log: FrontlineProtocol_v11.0.0.1_Maintenance_Update_Log_2026-11-23.docx — 37,893 bytes; SHA-256 827928ca4fd35799f8ae0ada240bc443b910af64abf13b2fa25ba73ddb22e9ae.
+- Evidence ZIP: FrontlineProtocol_Maintenance_Evidence_2026-11-23.zip — 81,506 bytes; 10 entries; CRC PASS; SHA-256 92275ee87e39640ceccd08ab3bd830ded6d5a76819a9950450dd93022e129f04.
+- Verification: 17/17 regression entries PASS; Python 19/19; JSON 61/61; integration 506/506; SHA256SUMS 507/507; .meta 145/145; OBJ 28 with zero invalid indices; C# 48-file lexical scan (not compilation); admin cookie probes 3/3.
+- No runtime code change or version increment. Runtime bug counts new/fixed/open = 0/0/0. v11.0.0.1 remains a candidate pending reconciliation with the inaccessible 2026-11-20 v11.0.0.0 497-entry archive.
+- These binary artifacts remain in the ChatGPT file workspace and are not committed to GitHub. The formal main repo is not writable; this mirror update is documentation-only.
