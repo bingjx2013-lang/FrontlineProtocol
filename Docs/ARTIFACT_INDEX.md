@@ -56,3 +56,13 @@ This index records artifacts verified in the current file workspace. It does **n
 - Verification: 17/17 regression entries PASS; Python 19/19; JSON 61/61; integration 506/506; SHA256SUMS 507/507; .meta 145/145; OBJ 28 with zero invalid indices; C# 48-file lexical scan (not compilation); admin cookie probes 3/3.
 - No runtime code change or version increment. Runtime bug counts new/fixed/open = 0/0/0. v11.0.0.1 remains a candidate pending reconciliation with the inaccessible 2026-11-20 v11.0.0.0 497-entry archive.
 - These binary artifacts remain in the ChatGPT file workspace and are not committed to GitHub. The formal main repo is not writable; this mirror update is documentation-only.
+
+
+## 2026-11-23 follow-up execution — run 9
+- Daily report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-23_Run9.docx` — 40,206 bytes; SHA-256 `fe2bf71bf0ccd63bd287bb31b7d2e4eff6cf88112c8795c9c0028d5fbed2d8e1`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-23_Run9.docx` — 38,201 bytes; SHA-256 `da51722a54135ff113d662fe84cb176332acf1b738c8e2d8a50c471c0caeb356`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-23_Run9.zip` — 84,061 bytes; 15 entries; CRC PASS; SHA-256 `5ecbe2beabacdc8ad51b266b5393f3981549a8f38114d13a5ebab84561c44b76`.
+- 16/16 individual regression entries PASS; admin cookie probes 3/3 PASS. Aggregate runner printed ALL PASS but the outer command timed out after summary.
+- Static integrity: complete ZIP 497 entries CRC PASS; integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# 48-file lexical scan (not compilation).
+- The prior v11.0.0.1 candidate record remains unreconciled: this run could not retrieve its binary or compare it to the accessible 2026-11-20 v11.0.0.0 package. Formal version remains v11.0.0.0.
+- No new complete project ZIP or runtime network patch was created; binary artifacts remain in the ChatGPT file workspace, not this GitHub mirror.
