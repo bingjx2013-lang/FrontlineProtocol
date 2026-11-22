@@ -68,3 +68,18 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - Legacy `We-MCS/Frontline-Protocol`: one 3-byte source stub in its recursive tree.
 - This test mirror contains 15 text/documentation entries only; no Client/Server/Admin source tree. Binary artifacts remain in the ChatGPT file workspace and are not committed here.
 
+
+
+## 2026-11-23 source audit — run 9
+- Current conversation workspace candidate: v11.0.0.1 complete ZIP, 1,576,260 bytes, 508 entries, CRC PASS, SHA-256 c918f99eb4370cc0814bea415a88761907597303d01b7b937a554c30444a243d.
+- Runtime network patch: 133,688 bytes, 30 entries, CRC PASS, SHA-256 995e06544b226c842b738653dc0354d2674d3b9ec7910060689342dfa432f499.
+- Regression 17/17 PASS; Python 19/19 compileall + AST; JSON 61/61; integration manifest 506/506; SHA256SUMS 507/507; Unity .meta 145/145 with unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# lexical scan 48 files (not compilation); client/server route parity 11/11; admin cookie probes 3/3.
+- Candidate source scope: 48 C# files, 19 Python files, two Web AdminPanel HTML files, 145 Unity asset/meta pairs, 28 OBJ files. No separate Android Admin project found.
+- Version provenance conflict: run 8 points to a 2026-11-20 v11.0.0.0 497-entry complete archive (SHA-256 ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e), but that archive is not currently accessible. The available v11.0.0.1 candidate is based on the 2026-11-15 490-entry v11.0.0.0 baseline; do not promote it to the formal latest baseline until the 11/20 package is restored and compared.
+- No new runtime source fix; bug counts new/fixed/open = 0/0/0; no version increment.
+- Risks: production TLS/Secure Cookie not verified; no port fallback/discovery; client does not adopt metadata websocket_path automatically or track pong deadline; no Android/WebGL transport acceptance; in-memory state; test dependency websockets has no standalone requirements file; AI/snapshot performance not profiled.
+- Formal main repo remains README-only, 0 KB, pull=true/push=false. Legacy repo has only a 3-byte source-like stub. Test mirror remains documentation-only.
+- Word audit: FrontlineProtocol_v11.0.0.1_Source_Audit_2026-11-23.docx, 40,174 bytes, SHA-256 4886683afaf09d6828bfefa7f58e966742b3445257d445ad1f16767e2993b617.
+- Word update log: FrontlineProtocol_v11.0.0.1_Maintenance_Update_Log_2026-11-23.docx, 37,893 bytes, SHA-256 827928ca4fd35799f8ae0ada240bc443b910af64abf13b2fa25ba73ddb22e9ae.
+- Evidence ZIP: FrontlineProtocol_Maintenance_Evidence_2026-11-23.zip, 81,506 bytes, 10 entries, CRC PASS, SHA-256 92275ee87e39640ceccd08ab3bd830ded6d5a76819a9950450dd93022e129f04.
+- v12 remains BLOCKED: no full v12 source tree, 12-group art overlay, FieldOperationsCatalog_v12.json or manifests.
