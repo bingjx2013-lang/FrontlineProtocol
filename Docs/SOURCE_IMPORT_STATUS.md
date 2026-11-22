@@ -87,3 +87,15 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 
 ## Post-commit verification
 - After this documentation-only update, the test mirror has 16 text/documentation files in its recursive main tree and still has no Client/Server/Admin source tree. No binary package was committed.
+
+
+## 2026-11-23 follow-up execution — run 9
+- Current accessible complete archive is the 2026-11-20 v11.0.0.0 package: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- This run could not retrieve the v11.0.0.1 candidate binary referenced in the prior source-audit entry from the current conversation file listing, recent Library listing or working container. Its rebase against the 2026-11-20 archive remains unverified; formal version stays v11.0.0.0.
+- Regression: 12 self-contained + 4 isolated-server entries = 16/16 individually PASS; admin cookie probes 3/3 PASS. Aggregate runner printed ALL PASS but the outer command timed out after the summary without a final exit code.
+- Static: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145 unique GUIDs; 125 asset pairs; OBJ 28 / 1,320 vertices / 928 faces / 0 invalid indices; C# lexical scan 48 files (not compilation).
+- No code/config/art/API/protocol/Schema changes; bug counts new/fixed/open 0/0/0. No new full project package or runtime network patch generated.
+- New Word report: 40,206 bytes, SHA-256 `fe2bf71bf0ccd63bd287bb31b7d2e4eff6cf88112c8795c9c0028d5fbed2d8e1`.
+- New no-code update log: 38,201 bytes, SHA-256 `da51722a54135ff113d662fe84cb176332acf1b738c8e2d8a50c471c0caeb356`.
+- New evidence ZIP: 84,061 bytes, 15 entries, CRC PASS, SHA-256 `5ecbe2beabacdc8ad51b266b5393f3981549a8f38114d13a5ebab84561c44b76`.
+- v12.0.0.0 remains blocked by missing complete source, art overlay, catalog and manifests.
