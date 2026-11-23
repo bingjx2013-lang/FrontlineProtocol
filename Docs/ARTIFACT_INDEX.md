@@ -66,3 +66,12 @@ This index records artifacts verified in the current file workspace. It does **n
 - Static integrity: complete ZIP 497 entries CRC PASS; integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# 48-file lexical scan (not compilation).
 - The prior v11.0.0.1 candidate record remains unreconciled: this run could not retrieve its binary or compare it to the accessible 2026-11-20 v11.0.0.0 package. Formal version remains v11.0.0.0.
 - No new complete project ZIP or runtime network patch was created; binary artifacts remain in the ChatGPT file workspace, not this GitHub mirror.
+
+
+## 2026-11-24 daily maintenance — run 10
+- Daily report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-24_Run10.docx` — 40,592 bytes; SHA-256 `091716308daf766a41d70fcd48add5285362edab44119b1c85d1d4e8a94ec567`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-24_Run10.docx` — 38,316 bytes; SHA-256 `5e74edbac68eeaa1c506ff2797611f73093256cebb7d902f532db2c7e1e6339a`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-24_Run10.zip` — 85,361 bytes; 15 entries; CRC PASS; SHA-256 `ddcf12d87b6d1de1238edd4fe4cf657ff3f2a42797633fbdc97e53ee33046975`.
+- Current full source reference remains the 2026-11-20 v11.0.0.0 package (497 entries; CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`).
+- Latest runtime network patch remains 2026-11-19 (33 entries; CRC PASS; SHA-256 `3b5c4be9e4909fb3756bf62c594bf3d3b0b617c5911a025dd807c1ca86637afc`). The 2026-11-20 network patch is test-harness only (5 entries; CRC PASS; SHA-256 `c4fa943e9a42f86885522aff3a1b33c067c19902454d090cc6200f0ee4a556c3`).
+- No new complete project package or runtime network patch was generated.
