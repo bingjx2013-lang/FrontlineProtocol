@@ -99,3 +99,20 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - New no-code update log: 38,201 bytes, SHA-256 `da51722a54135ff113d662fe84cb176332acf1b738c8e2d8a50c471c0caeb356`.
 - New evidence ZIP: 84,061 bytes, 15 entries, CRC PASS, SHA-256 `5ecbe2beabacdc8ad51b266b5393f3981549a8f38114d13a5ebab84561c44b76`.
 - v12.0.0.0 remains blocked by missing complete source, art overlay, catalog and manifests.
+
+
+## 2026-11-24 verification — run 10
+- Latest accessible complete source package remains `FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-20.zip`: 1,517,723 bytes; 497 entries; CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries passed individually; maintenance repeat 5/5; admin cookie probes 3/3. Aggregate runner INCOMPLETE at 300 seconds.
+- Static: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity assets/.meta 145/145 with unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# lexical scan 48 files (not compilation).
+- Client, Unity bundleVersion, 枢纽 Server, Web Admin Panel and PowerShell setup banner agree on v11.0.0.0; API Schema 1; Realtime Protocol 1.
+- The complete archive includes a web AdminPanel only; no separate Android Admin/Gradle project is present.
+- FP-CLI-001 remains a conditional compatibility risk: metadata publishes websocket_path, but client bootstrap takes the local ServerConfig path before metadata fetch.
+- FP-CLI-002 is reclassified as application-level RTT telemetry only; WebSocket control ping/pong is separately handled, with no demonstrated client liveness failure.
+- The v11.0.0.1 candidate referenced in older GitHub notes is not present in the current conversation file list, Library search or working container; rebase against the 2026-11-20 package remains unverified. Formal version stays v11.0.0.0.
+- No code/config/art/API/protocol/Schema change; Bug Counter new/fixed/open = 0/0/0.
+- v12.0.0.0 remains BLOCKED by missing complete Client/枢纽 Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests.
+- Run 10 Word report: 40,592 bytes, SHA-256 `091716308daf766a41d70fcd48add5285362edab44119b1c85d1d4e8a94ec567`.
+- Run 10 no-code update log: 38,316 bytes, SHA-256 `5e74edbac68eeaa1c506ff2797611f73093256cebb7d902f532db2c7e1e6339a`.
+- Run 10 evidence ZIP: 15 entries, CRC PASS, SHA-256 `ddcf12d87b6d1de1238edd4fe4cf657ff3f2a42797633fbdc97e53ee33046975`.
+- No new complete project ZIP or runtime network patch was created; binary artifacts remain in the ChatGPT file workspace, not this mirror.
