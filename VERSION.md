@@ -58,3 +58,17 @@
 - The v11.0.0.1 candidate mentioned in the prior source audit could not be retrieved in this execution and has not been reconciled with the 2026-11-20 archive. Do not promote it or create v11.0.0.2 yet.
 - 16/16 individual regression entries PASS; admin cookie probes 3/3 PASS. Static integrity 495/495 integration, 496/496 hashes, 57 JSON, 18 Python, 145 .meta GUIDs, 28 OBJ and 48 C# lexical scans passed (C# scan is not compilation).
 - Runtime bug counter new/fixed/open = 0/0/0. v12.0.0.0 remains BLOCKED by missing source, 12-group art overlay, catalog and manifests.
+
+
+## 2026-11-24 daily maintenance — run 10
+- Formal version remains **v11.0.0.0**; no source/runtime/config/art/API/protocol/Schema change and no version increment.
+- Latest accessible complete package remains the 2026-11-20 v11.0.0.0 archive: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries passed individually; maintenance repeat 5/5; admin cookie probes 3/3. Aggregate runner INCOMPLETE at 300 seconds; do not report the aggregate process as PASS.
+- Static: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity assets/.meta 145/145 and unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# 48-file lexical scan (not compilation).
+- FP-CLI-002 was reclassified: application-level pong is not consumed for RTT telemetry, but WebSocket control ping/pong remains separate; no client liveness bug was demonstrated.
+- No runtime code changes; Bug Counter new/fixed/open = 0/0/0.
+- v11.0.0.1 candidate binary remains unavailable in this run and its rebase against the 2026-11-20 archive is unverified. v12.0.0.0 remains blocked by missing source, art overlay, catalog and manifests.
+- Run 10 daily report: 40,592 bytes, SHA-256 `091716308daf766a41d70fcd48add5285362edab44119b1c85d1d4e8a94ec567`.
+- Run 10 no-code update log: 38,316 bytes, SHA-256 `5e74edbac68eeaa1c506ff2797611f73093256cebb7d902f532db2c7e1e6339a`.
+- Run 10 evidence ZIP: 85,361 bytes, 15 entries, CRC PASS, SHA-256 `ddcf12d87b6d1de1238edd4fe4cf657ff3f2a42797633fbdc97e53ee33046975`.
+- GitHub update is documentation-only in this test mirror; no binary source or runtime patch was committed.
