@@ -116,3 +116,12 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - Run 10 no-code update log: 38,316 bytes, SHA-256 `5e74edbac68eeaa1c506ff2797611f73093256cebb7d902f532db2c7e1e6339a`.
 - Run 10 evidence ZIP: 15 entries, CRC PASS, SHA-256 `ddcf12d87b6d1de1238edd4fe4cf657ff3f2a42797633fbdc97e53ee33046975`.
 - No new complete project ZIP or runtime network patch was created; binary artifacts remain in the ChatGPT file workspace, not this mirror.
+
+
+## 2026-11-25 daily maintenance follow-up — run 11
+
+- This execution physically found and reverified the 2026-11-20 v11.0.0.0 complete archive in the active working container: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`. This corrects the prior bi-daily run's environment-specific statement that the archive was not present in that earlier execution.
+- The 2026-11-19 runtime network patch is present and its 31 payload files match the complete archive byte-for-byte.
+- The v11.0.0.1 candidate remains a documentation-only historical reference in this execution; its binary is absent and cannot be rebased.
+- All 16 regression entries passed individually; static manifests and assets passed. FP-CLI-001 was confirmed by a live custom WebSocket path probe and remains open pending candidate provenance reconciliation.
+- No source tree was added to this documentation test mirror; formal main repository remains unavailable for push.
