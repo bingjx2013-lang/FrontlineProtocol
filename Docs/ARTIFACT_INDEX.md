@@ -1,6 +1,6 @@
 # Latest Verified Frontline Artifacts
 
-Status date: **2026-11-22**.
+Status date: **2026-11-25**.
 
 This index records artifacts verified in the current file workspace. It does **not** mean the binary files have been uploaded to this GitHub repository.
 
@@ -87,3 +87,15 @@ This index records artifacts verified in the current file workspace. It does **n
 - No new complete project ZIP or runtime network patch was generated. Last physically accessible reference remains the 2026-11-15 v11.0.0.0 archive (490 entries; CRC PASS; SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`) and 33-entry patch (CRC PASS; SHA-256 `0e9478cc73271e5b51106111c2b8b15347d63557bcf474224ed30331a29088d5`).
 - Latest documented 2026-11-20 refresh and 2026-11-19 runtime patch binaries were not available in this run. v11.0.0.1 remains unpromoted; v12.0.0.0 remains blocked.
 - 16/16 regression entries passed individually; aggregate runner INCOMPLETE. Static checks: integration 488/488; SHA256SUMS 489/489; JSON 56; Python 18; Unity .meta 145/145 unique; OBJ 28; C# 48-file lexical scan (not compilation).
+
+
+## 2026-11-25 Daily Maintenance Follow-up — Run 11
+
+- Current workspace re-verified complete source: `FrontlineProtocol_v11.0.0.0_Complete_Maintenance_2026-11-20.zip`, 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Runtime network patch: `FrontlineProtocol_v11.0.0.0_Network_And_Runtime_Patch_Maintenance_2026-11-19.zip`, 132,194 bytes, 33 entries, CRC PASS, SHA-256 `3b5c4be9e4909fb3756bf62c594bf3d3b0b617c5911a025dd807c1ca86637afc`; 31/31 payload files match the complete package.
+- Test harness patch: `FrontlineProtocol_v11.0.0.0_Network_Regression_Test_Patch_2026-11-20.zip`, 41,530 bytes, 5 entries, CRC PASS; not a runtime network patch.
+- Daily Word report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-25_Run11_Daily_Followup.docx`, 40,684 bytes, SHA-256 `5f93217a891a148c5914fd354a53b64effa2ac2ec1b08c38466632f472bf8364`.
+- No-code Word update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-25_Run11_Daily_Followup.docx`, 38,419 bytes, SHA-256 `a7a15c113d358c3b106c2c48145fde1f1bf080273ee15dbf9599d2d9b9163997`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-25_Run11_Daily_Followup.zip`, 84,035 bytes, 14 entries, CRC PASS, SHA-256 `8137272e605875611b4d10e48ba9093a6bb715766166e00859da91f440f792ac`.
+- 12/12 self-contained and 4/4 isolated-server tests passed individually; admin Cookie probes 3/3 passed. One-shot aggregate result not obtained.
+- FP-CLI-001 confirmed by live custom-path probe; held pending v11.0.0.1 candidate provenance reconciliation. Formal version remains v11.0.0.0.
