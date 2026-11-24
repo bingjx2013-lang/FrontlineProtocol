@@ -79,9 +79,9 @@ This index records artifacts verified in the current file workspace. It does **n
 
 ## 2026-11-25 bi-daily milestone maintenance — run 11
 
-- Milestone report: `FrontlineProtocol_BiDaily_Milestone_Report_2026-11-25.docx` — 41,143 bytes; SHA-256 `6f23ca34cd2703adf15fd3c491f3e27bd18e32473168317f19d836368b7f8123`.
-- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-25.docx` — 38,122 bytes; SHA-256 `9607a3ba12887536415f5a491f8802b086ce458266351b1248071121d7a6dda5`.
-- Static audit report: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-25.docx` — 38,781 bytes; SHA-256 `321d1288798769a775b0277ce226fd23fe26747e0d0a3cff484d0d46463ec199`.
+- Milestone report: `FrontlineProtocol_BiDaily_Milestone_Report_2026-11-25.docx` — 41,143 bytes; SHA-256 `0d1b15215318f81bc9369ccba4e61afe9ffeac7778ea15776c711baca71d2228`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-25.docx` — 38,122 bytes; SHA-256 `384335cea150171f4d9ebf50444c0a0d2045827a833f8b37399dd5b1287ef982`.
+- Static audit report: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-25.docx` — 38,781 bytes; SHA-256 `4d100fd5d75d61af4ce40339e293d9c43a2f3a045a7e0b0fe623432586931564`.
 - v12 network resilience design proposal: `FrontlineProtocol_v12.0.0.0_Network_Resilience_Design_2026-11-25.docx` — 38,934 bytes; SHA-256 `b95eee6d672ac3ccfbf61568c5f6f78eddf420aa7849eb01f55614d4eb1602bc`; design-only, not a runtime patch.
 - Evidence ZIP: `FrontlineProtocol_BiDaily_Evidence_2026-11-25.zip` — 9,355 bytes; 12 entries; CRC PASS; 11/11 internal SHA records match; SHA-256 `b79276c6f51283be0df96879642fe04288dc3295fbe12da10922fde064e2999e`.
 - No new complete project ZIP or runtime network patch was generated. Last physically accessible reference remains the 2026-11-15 v11.0.0.0 archive (490 entries; CRC PASS; SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`) and 33-entry patch (CRC PASS; SHA-256 `0e9478cc73271e5b51106111c2b8b15347d63557bcf474224ed30331a29088d5`).
