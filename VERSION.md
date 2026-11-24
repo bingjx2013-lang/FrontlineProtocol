@@ -89,3 +89,14 @@
 - Word static audit: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-25.docx` — 38,781 bytes; SHA-256 `4d100fd5d75d61af4ce40339e293d9c43a2f3a045a7e0b0fe623432586931564`.
 - Word v12 network resilience design: `FrontlineProtocol_v12.0.0.0_Network_Resilience_Design_2026-11-25.docx` — 38,934 bytes; SHA-256 `b95eee6d672ac3ccfbf61568c5f6f78eddf420aa7849eb01f55614d4eb1602bc`. Design-only, not an installable patch.
 - Evidence ZIP: `FrontlineProtocol_BiDaily_Evidence_2026-11-25.zip` — 9,355 bytes; 12 entries; CRC PASS; internal SHA records 11/11; SHA-256 `b79276c6f51283be0df96879642fe04288dc3295fbe12da10922fde064e2999e`.
+
+
+## 2026-11-25 daily maintenance follow-up — run 11
+
+- Formal version remains **v11.0.0.0**; no runtime source/config/art/API/protocol/Schema changes.
+- The 2026-11-20 497-entry complete archive is physically accessible and was reverified in this run (CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`).
+- 12/12 self-contained + 4/4 isolated-server tests passed individually; admin Cookie probes 3/3 passed. Aggregate one-shot result not obtained.
+- Static: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145 unique GUIDs; OBJ 28 with zero invalid indices; C# lexical scan 48 files (not compilation).
+- FP-CLI-001 confirmed by isolated custom-path test: metadata advertises /ws-alt and that endpoint accepts a WebSocket, while the client-configured /ws path is rejected. No code change was made because the historical v11.0.0.1 candidate ZIP is unavailable for rebase.
+- Word report SHA-256 `5f93217a891a148c5914fd354a53b64effa2ac2ec1b08c38466632f472bf8364`; no-code update log SHA-256 `a7a15c113d358c3b106c2c48145fde1f1bf080273ee15dbf9599d2d9b9163997`; evidence ZIP SHA-256 `8137272e605875611b4d10e48ba9093a6bb715766166e00859da91f440f792ac`.
+- v12.0.0.0 remains blocked by missing full Client/Hub Server/Admin source, art overlay, catalog and manifests.
