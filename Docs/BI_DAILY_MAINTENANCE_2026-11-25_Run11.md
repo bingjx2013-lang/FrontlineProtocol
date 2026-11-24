@@ -12,8 +12,8 @@
 - 16/16 regression entries passed individually (12 self-contained + 4 isolated-server). The aggregate runner did not complete in this execution and remains INCOMPLETE.
 - v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and manifests. Unity Editor, Play Mode, CI, Android build/install, Windows host and production TLS/WSS acceptance remain unrun.
 - GitHub formal main repository `We-MCS/Project_Frontline-Protocol` remains README-only and push=false. This update is documentation-only in the test mirror; no source or binary package was uploaded.
-- Word report: `FrontlineProtocol_BiDaily_Milestone_Report_2026-11-25.docx` — 41,143 bytes; SHA-256 `6f23ca34cd2703adf15fd3c491f3e27bd18e32473168317f19d836368b7f8123`.
-- Word no-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-25.docx` — 38,122 bytes; SHA-256 `9607a3ba12887536415f5a491f8802b086ce458266351b1248071121d7a6dda5`.
-- Word static audit: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-25.docx` — 38,781 bytes; SHA-256 `321d1288798769a775b0277ce226fd23fe26747e0d0a3cff484d0d46463ec199`.
+- Word report: `FrontlineProtocol_BiDaily_Milestone_Report_2026-11-25.docx` — 41,143 bytes; SHA-256 `0d1b15215318f81bc9369ccba4e61afe9ffeac7778ea15776c711baca71d2228`.
+- Word no-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-25.docx` — 38,122 bytes; SHA-256 `384335cea150171f4d9ebf50444c0a0d2045827a833f8b37399dd5b1287ef982`.
+- Word static audit: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-25.docx` — 38,781 bytes; SHA-256 `4d100fd5d75d61af4ce40339e293d9c43a2f3a045a7e0b0fe623432586931564`.
 - Word v12 network resilience design: `FrontlineProtocol_v12.0.0.0_Network_Resilience_Design_2026-11-25.docx` — 38,934 bytes; SHA-256 `b95eee6d672ac3ccfbf61568c5f6f78eddf420aa7849eb01f55614d4eb1602bc`. Design-only, not an installable patch.
 - Evidence ZIP: `FrontlineProtocol_BiDaily_Evidence_2026-11-25.zip` — 9,355 bytes; 12 entries; CRC PASS; internal SHA records 11/11; SHA-256 `b79276c6f51283be0df96879642fe04288dc3295fbe12da10922fde064e2999e`.
