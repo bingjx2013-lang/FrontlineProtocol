@@ -99,3 +99,15 @@ This index records artifacts verified in the current file workspace. It does **n
 - Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-25_Run11_Daily_Followup.zip`, 84,035 bytes, 14 entries, CRC PASS, SHA-256 `8137272e605875611b4d10e48ba9093a6bb715766166e00859da91f440f792ac`.
 - 12/12 self-contained and 4/4 isolated-server tests passed individually; admin Cookie probes 3/3 passed. One-shot aggregate result not obtained.
 - FP-CLI-001 confirmed by live custom-path probe; held pending v11.0.0.1 candidate provenance reconciliation. Formal version remains v11.0.0.0.
+
+
+## 2026-11-26 daily maintenance — Run 12
+
+- Daily Word report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-26_Run12.docx` — 40,428 bytes; SHA-256 `9e703c1d1dff263fe9e2278f7a16573d6184053e2e9f89650bc22b78b40d9dc9`.
+- No-code Word update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-26_Run12.docx` — 38,169 bytes; SHA-256 `5bfcf6ddcf0007f9ad92cd113378ea3fd67786589b3eccf39ad5d0ec79f2ebaf`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-26_Run12.zip` — 83,589 bytes; 12 entries; CRC PASS; SHA-256 `dc4e6df43b511160f985a96f19ae12d27fbc41696c94705e2b32dcb014e1b936`.
+- Current active workspace reverified the 2026-11-20 v11.0.0.0 complete package: 497 entries, CRC PASS, integration 495/495, SHA256SUMS 496/496.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries passed individually; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner not completed as one process.
+- FP-CLI-001 custom path reproduced: `/api/meta` advertises `/ws-alt`; `/ws-alt` returns welcome; `/ws` is rejected; bootstrap does not apply `meta.websocket_path`.
+- No source/runtime/config/art/API/protocol/Schema changes; formal version remains v11.0.0.0. The historical v11.0.0.1 candidate binary is unavailable for rebase; v12.0.0.0 remains blocked.
+- No new complete project package or runtime network patch was generated. Existing 2026-11-20 complete package and 2026-11-19 runtime patch remain the verified references.
