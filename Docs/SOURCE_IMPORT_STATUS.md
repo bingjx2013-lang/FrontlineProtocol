@@ -125,3 +125,21 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - The v11.0.0.1 candidate remains a documentation-only historical reference in this execution; its binary is absent and cannot be rebased.
 - All 16 regression entries passed individually; static manifests and assets passed. FP-CLI-001 was confirmed by a live custom WebSocket path probe and remains open pending candidate provenance reconciliation.
 - No source tree was added to this documentation test mirror; formal main repository remains unavailable for push.
+
+
+## 2026-11-26 source import and verification — Run 12
+
+- The current active workspace contains the 2026-11-20 v11.0.0.0 complete archive: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Runtime network patch (2026-11-19): 33 entries, CRC PASS; all 31 payload files match the complete archive byte-for-byte.
+- Network regression patch (2026-11-20): 5 entries, CRC PASS; manifest classifies it as test-harness only and `runtime_code_changed=false`.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries passed individually; maintenance regression repeated 5/5; Admin Cookie probes 3/3. Aggregate runner was not completed as a single process.
+- Static integrity: integration manifest 495/495; SHA256SUMS 496/496; JSON 57/57; Python AST/compileall 18/18; Unity .meta 145/145 and 145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# lexical scan 48 files (not compilation).
+- Client, Unity bundleVersion, 枢纽 Server config, Web Admin banner and PowerShell setup banner agree on v11.0.0.0; API Schema 1; Realtime Protocol 1.
+- Admin inventory: Web AdminPanel index/login only; no separate Android Gradle Admin project. Android preflight: EditorBuildSettings.asset missing; training controls remain keyboard/mouse oriented.
+- FP-CLI-001 confirmed: custom server path /ws-alt is published and accepts WebSocket, while /ws is rejected; Unity bootstrap does not adopt metadata websocket_path.
+- Historical v11.0.0.1 candidate binary is unavailable in the current active workspace and cannot be reconciled with the 2026-11-20 497-entry package. Formal version remains v11.0.0.0; no code change or version increment.
+- v12.0.0.0 remains BLOCKED by missing complete Client/枢纽 Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and v12 manifests.
+- Run 12 Word report: 40,428 bytes, SHA-256 `9e703c1d1dff263fe9e2278f7a16573d6184053e2e9f89650bc22b78b40d9dc9`.
+- Run 12 no-code update log: 38,169 bytes, SHA-256 `5bfcf6ddcf0007f9ad92cd113378ea3fd67786589b3eccf39ad5d0ec79f2ebaf`.
+- Run 12 evidence ZIP: 83,589 bytes, 12 entries, CRC PASS, SHA-256 `dc4e6df43b511160f985a96f19ae12d27fbc41696c94705e2b32dcb014e1b936`.
+- No source tree or binary artifact was uploaded to this documentation mirror.
