@@ -100,3 +100,18 @@
 - FP-CLI-001 confirmed by isolated custom-path test: metadata advertises /ws-alt and that endpoint accepts a WebSocket, while the client-configured /ws path is rejected. No code change was made because the historical v11.0.0.1 candidate ZIP is unavailable for rebase.
 - Word report SHA-256 `5f93217a891a148c5914fd354a53b64effa2ac2ec1b08c38466632f472bf8364`; no-code update log SHA-256 `a7a15c113d358c3b106c2c48145fde1f1bf080273ee15dbf9599d2d9b9163997`; evidence ZIP SHA-256 `8137272e605875611b4d10e48ba9093a6bb715766166e00859da91f440f792ac`.
 - v12.0.0.0 remains blocked by missing full Client/Hub Server/Admin source, art overlay, catalog and manifests.
+
+
+## 2026-11-26 daily maintenance — Run 12
+
+- Formal release remains **v11.0.0.0** (A=11, B=0, C=0, D=0); no source/runtime/config/art/API/protocol/Schema change was made.
+- Current active workspace reverified the 2026-11-20 complete archive: 1,517,723 bytes; 497 entries; CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Runtime network patch (2026-11-19): 33 entries; 31/31 payload files match the complete package byte-for-byte. The 2026-11-20 five-entry patch is test-harness only, not a runtime patch.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries PASS individually; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner remains INCOMPLETE as a single-process run.
+- Static: integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145; unique GUID 145; OBJ 28 with zero invalid indices; C# lexical scan 48 files (not compilation).
+- FP-CLI-001 remains confirmed/open: server metadata path /ws-alt works, default /ws is rejected, and Unity bootstrap does not apply meta.websocket_path.
+- The historical v11.0.0.1 candidate binary is unavailable in this execution and cannot be reconciled against the 2026-11-20 package. Do not overwrite or recreate that candidate under the same version. No v11.0.0.2 is created.
+- v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and version/bug/integration/hash manifests.
+- Word report: 40,428 bytes; SHA-256 `9e703c1d1dff263fe9e2278f7a16573d6184053e2e9f89650bc22b78b40d9dc9`.
+- No-code update log: 38,169 bytes; SHA-256 `5bfcf6ddcf0007f9ad92cd113378ea3fd67786589b3eccf39ad5d0ec79f2ebaf`.
+- Evidence ZIP: 83,589 bytes; 12 entries; CRC PASS; SHA-256 `dc4e6df43b511160f985a96f19ae12d27fbc41696c94705e2b32dcb014e1b936`.
