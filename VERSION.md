@@ -144,3 +144,11 @@
 - Run 14 Word report SHA-256: `436d64fcd6cf6a43e170b252a7f63ebff5085e99ab961497e16cb5ab615ca09e`.
 - Run 14 no-code update log SHA-256: `56dbc18b0ae34d4f16198f938e03887c2127f7e1423bcfc09c80446929ac3859`.
 - Run 14 evidence ZIP SHA-256: `59b60c49cc4048869a9dbb4e80d29ce76b0dbe490a042c4157fa1fcf2ffeb7ca`.
+
+
+## 2026-11-27 Run 15 — no-code maintenance
+- Formal release remains **v11.0.0.0** (A=11, B=0, C=0, D=0); no version increment.
+- The 2026-11-20 official 497-entry source package remains the latest recorded formal source, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`, verified in Run14 but not physically available in Run15.
+- The accessible v11.0.0.1 508-entry archive is a historical candidate based on the 2026-11-15 490-entry baseline; do not promote until reconciled with the 2026-11-20 package.
+- Run15 runtime Bug counts: newly registered 0 / fixed 0 / newly opened 0. FP-CLI-001 remains an existing OPEN issue.
+- No complete v12.0.0.0 source tree or 12-group art overlay/catalog/manifests are available.
