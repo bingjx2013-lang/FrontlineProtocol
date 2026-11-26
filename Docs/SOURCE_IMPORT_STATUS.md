@@ -168,3 +168,17 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - Regression: 12/12 self-contained + 4/4 isolated-server entries PASS individually; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner did not terminate after printing its ALL PASS summary; aggregate status INCOMPLETE.
 - FP-CLI-001 remains confirmed/open. The v11.0.0.1 candidate binary and v12 complete source/asset overlay/manifests remain unavailable.
 - No source/runtime/config/art/API/protocol/Schema change; no new complete project ZIP or runtime network patch generated.
+
+
+## 2026-11-27 periodic source audit — Run 15
+- GitHub formal main `We-MCS/Project_Frontline-Protocol`: README-only (28 bytes), tree 1 entry, size 0 KB, push=false.
+- Legacy `We-MCS/Frontline-Protocol`: tree 4 entries; only source-like file is a 3-byte FrontlineAndroidBuild.cs; push=false.
+- Test mirror `bingjx2013-lang/FrontlineProtocol`: tree 24 documentation/text entries; no Client/Server/Admin source tree; push=true.
+- Current Run15 workspace physically contains the historical v11.0.0.1 candidate complete archive (508 entries; CRC PASS; SHA-256 `c918f99eb4370cc0814bea415a88761907597303d01b7b937a554c30444a243d`) and its 30-entry candidate patch (CRC PASS; SHA-256 `995e06544b226c842b738653dc0354d2674d3b9ec7910060689342dfa432f499`).
+- The 2026-11-20 v11.0.0.0 497-entry package was verified in Run14 (SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`) but is not accessible in this Run15 file list/mounted workspace. The candidate is based on the 2026-11-15 490-entry baseline; rebase status cannot be confirmed.
+- Regression: 12 self-contained + 5 isolated-server entries = 17/17 individually PASS. Aggregate runner TIMEOUT/INCOMPLETE at 300 seconds.
+- Static: Python compileall 19/19; JSON 61/61; Integration 506/506; SHA256SUMS 507/507; Unity .meta 145/145 unique; OBJ 28 with zero invalid indices; C# lexical scan 48/48 (not compilation); API paths 11/11; Admin Cookie probes 3/3.
+- FP-CLI-001 custom path reproduced: /api/meta advertises /ws-alt, authenticated /ws-alt returns welcome, /ws returns 404, Unity bootstrap does not apply metadata path. OPEN; no patch because official 11/20 source unavailable for rebase.
+- FP-NET-002 port collision reproduced: occupied configured port makes the Hub process exit with Errno 98; no automatic port fallback/discovery.
+- No runtime source change; formal release remains v11.0.0.0; Bug counts 0/0/0; no v11.0.0.2.
+- v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and manifests.
