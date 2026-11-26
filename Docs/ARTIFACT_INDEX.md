@@ -131,3 +131,12 @@ This index records artifacts verified in the current file workspace. It does **n
 - Static integrity: JSON 57/57; Python 18/18; Unity .meta 145/145 and unique GUIDs; OBJ 28 with zero invalid indices; C# lexical scan 48/48 (not compilation); art inventory 30 Prefabs / 184 Art files / 2 scenes.
 - No source/runtime/config/art/API/protocol/Schema change; formal version remains v11.0.0.0. v12.0.0.0 remains BLOCKED.
 - No new complete source package or runtime network patch was generated. The 2026-11-19 runtime patch is the v10.0.0.2 -> v11.0.0.0 release overlay; the 2026-11-20 patch is test-harness only.
+
+
+## 2026-11-27 Run 15
+- Word source audit: `FrontlineProtocol_Source_Audit_Report_2026-11-27_Run15.docx` — 41,315 bytes; SHA-256 `ae96520c45bc0ce67918f91052d70945acaf87cab2fdf7f1ab09650568d3fa7f`.
+- Word no-code update log: `FrontlineProtocol_No_Code_Change_Update_Log_2026-11-27_Run15.docx` — 38,211 bytes; SHA-256 `3695084a4ac37fb299e0266c8913880e73193cd2637aca64be1f8084dbe808ce`.
+- Evidence ZIP: `FrontlineProtocol_Maintenance_Evidence_2026-11-27_Run15.zip` — 81,548 bytes; 10 entries; CRC PASS; SHA-256 `d25e3d9207ddef51bde37732d9493f3ea4ed5f1934cc635bca208679c1316cea`.
+- 17/17 individual regression entries PASS; aggregate runner TIMEOUT/INCOMPLETE; static checks and FP-CLI-001/FP-NET-002 reproductions are recorded in Run15 report.
+- No source/runtime/config/API/protocol/Schema change; formal version remains v11.0.0.0; Bug counts 0/0/0. v11.0.0.1 remains an unreconciled candidate.
+- Binary candidate complete/patch ZIPs remain in the ChatGPT file workspace, not this GitHub test mirror. No source or binary artifact was uploaded to GitHub.
