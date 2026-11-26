@@ -130,3 +130,17 @@
 - Run 13 no-code update log SHA-256: `98b77a2f07fef0150b8e0a4a2ea254f0820d33e18173cd141c4ac5a127ae7118`.
 - Run 13 static audit SHA-256: `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
 - Run 13 evidence ZIP: 20 entries, CRC PASS, internal SHA 19/19, SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
+
+
+## 2026-11-27 daily maintenance — Run 14
+- Formal version remains **v11.0.0.0** (A=11, B=0, C=0, D=0); no runtime source/config/art/API/protocol/Schema change.
+- Current workspace reverified the 2026-11-20 complete package: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`. This corrects Run 13's environment-specific note that the binary was unavailable during that earlier execution.
+- 16/16 individual regression entry points passed; maintenance regression repeated 5/5; Admin Cookie probes 3/3. Aggregate runner emitted all PASS and summary but did not exit within the execution window; aggregate status remains INCOMPLETE.
+- Static integrity: Integration 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# lexical scan 48/48 (not compilation); art inventory 30 Prefabs / 184 Art files / 2 scenes.
+- FP-CLI-001 confirmed/open: `/api/meta` advertises `/ws-alt`, that path accepts WebSocket, default `/ws` is rejected, and the Unity bootstrap does not apply `meta.websocket_path`.
+- The 2026-11-19 runtime patch has 31 manifest payload files; all 31 sizes/hashes match and all 31 are byte-identical to the current v11 package. It is the v10.0.0.2 -> v11.0.0.0 release overlay, not an update patch for an existing v11 package.
+- The 2026-11-20 five-entry patch is test-harness only (`runtime_code_changed=false`).
+- No new source package or runtime network patch was generated. v11.0.0.1 candidate remains unavailable for provenance reconciliation; v12.0.0.0 remains BLOCKED.
+- Run 14 Word report SHA-256: `436d64fcd6cf6a43e170b252a7f63ebff5085e99ab961497e16cb5ab615ca09e`.
+- Run 14 no-code update log SHA-256: `56dbc18b0ae34d4f16198f938e03887c2127f7e1423bcfc09c80446929ac3859`.
+- Run 14 evidence ZIP SHA-256: `59b60c49cc4048869a9dbb4e80d29ce76b0dbe490a042c4157fa1fcf2ffeb7ca`.

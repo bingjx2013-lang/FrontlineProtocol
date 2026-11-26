@@ -1,6 +1,6 @@
 # Latest Verified Frontline Artifacts
 
-Status date: **2026-11-25**.
+Status date: **2026-11-27**.
 
 This index records artifacts verified in the current file workspace. It does **not** mean the binary files have been uploaded to this GitHub repository.
 
@@ -119,3 +119,15 @@ This index records artifacts verified in the current file workspace. It does **n
 - Static audit report: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-27.docx` — 40,685 bytes; SHA-256 `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
 - Evidence ZIP: `FrontlineProtocol_BiDaily_Evidence_2026-11-27.zip` — 177,609 bytes; 20 entries; CRC PASS; internal SHA 19/19; SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
 - No new complete project ZIP or runtime network patch was generated. The last physically accessible references are the 2026-11-15 v11.0.0.0 complete archive and 33-entry runtime patch; both remain historical references only.
+
+
+## 2026-11-27 daily maintenance — Run 14
+- Daily report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-27_Run14.docx` — 40,483 bytes; SHA-256 `436d64fcd6cf6a43e170b252a7f63ebff5085e99ab961497e16cb5ab615ca09e`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-27_Run14.docx` — 38,462 bytes; SHA-256 `56dbc18b0ae34d4f16198f938e03887c2127f7e1423bcfc09c80446929ac3859`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-27_Run14.zip` — 84,283 bytes; 13 entries; CRC PASS; SHA-256 `59b60c49cc4048869a9dbb4e80d29ce76b0dbe490a042c4157fa1fcf2ffeb7ca`.
+- Reverified the 2026-11-20 v11.0.0.0 complete source in the current workspace: 497 entries; CRC PASS; Integration 495/495; SHA256SUMS 496/496. This corrects Run 13's environment-specific source-availability observation.
+- Regression: 16/16 individual entry points PASS; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner printed all PASS and summary but did not terminate within the execution window; aggregate status INCOMPLETE.
+- FP-CLI-001 reproduced and remains OPEN: metadata publishes `/ws-alt`, that path accepts WebSocket, `/ws` is rejected, and Unity bootstrap does not apply `meta.websocket_path`.
+- Static integrity: JSON 57/57; Python 18/18; Unity .meta 145/145 and unique GUIDs; OBJ 28 with zero invalid indices; C# lexical scan 48/48 (not compilation); art inventory 30 Prefabs / 184 Art files / 2 scenes.
+- No source/runtime/config/art/API/protocol/Schema change; formal version remains v11.0.0.0. v12.0.0.0 remains BLOCKED.
+- No new complete source package or runtime network patch was generated. The 2026-11-19 runtime patch is the v10.0.0.2 -> v11.0.0.0 release overlay; the 2026-11-20 patch is test-harness only.

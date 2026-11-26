@@ -159,3 +159,12 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - Run 13 static audit: 40,685 bytes; SHA-256 `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
 - Run 13 evidence ZIP: 177,609 bytes, 20 entries, CRC PASS, internal SHA records 19/19; SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
 - Formal main repository remains push=false; this repository is a documentation-only test mirror. No source tree or binary artifact was uploaded.
+
+
+## 2026-11-27 daily maintenance — Run 14 correction and verification
+- The 2026-11-20 v11.0.0.0 complete archive was physically present in the current conversation/mounted workspace and reverified: 1,517,723 bytes; 497 entries; CRC PASS; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- This supersedes Run 13's environment-specific observation that the 2026-11-20 binary was not available in that earlier execution; the formal release remains v11.0.0.0.
+- Integration manifest 495/495; SHA256SUMS 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145 with unique GUIDs; OBJ 28 with zero invalid indices; C# lexical scan 48/48 (not compilation).
+- Regression: 12/12 self-contained + 4/4 isolated-server entries PASS individually; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner did not terminate after printing its ALL PASS summary; aggregate status INCOMPLETE.
+- FP-CLI-001 remains confirmed/open. The v11.0.0.1 candidate binary and v12 complete source/asset overlay/manifests remain unavailable.
+- No source/runtime/config/art/API/protocol/Schema change; no new complete project ZIP or runtime network patch generated.
