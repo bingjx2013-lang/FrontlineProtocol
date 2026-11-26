@@ -115,3 +115,18 @@
 - Word report: 40,428 bytes; SHA-256 `9e703c1d1dff263fe9e2278f7a16573d6184053e2e9f89650bc22b78b40d9dc9`.
 - No-code update log: 38,169 bytes; SHA-256 `5bfcf6ddcf0007f9ad92cd113378ea3fd67786589b3eccf39ad5d0ec79f2ebaf`.
 - Evidence ZIP: 83,589 bytes; 12 entries; CRC PASS; SHA-256 `dc4e6df43b511160f985a96f19ae12d27fbc41696c94705e2b32dcb014e1b936`.
+
+
+## 2026-11-27 bi-daily milestone maintenance — Run 13
+- Formal release remains **v11.0.0.0**; v12.0.0.0 remains the next major milestone target but is BLOCKED.
+- No runtime source/config/art/API/protocol/Schema change or version increment was made; bug counts newly registered/fixed/closed this run = 0/0/0.
+- Latest documented source record remains the 2026-11-20 v11.0.0.0 refresh (497 entries; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`), but its binary was not present in this run's active conversation/Library/mounted workspace. The v11.0.0.1 candidate binary was also unavailable.
+- Last physically accessible source remains the 2026-11-15 v11.0.0.0 archive (490 entries; CRC PASS; SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`) and 33-entry runtime patch (CRC PASS; SHA-256 `0e9478cc73271e5b51106111c2b8b15347d63557bcf474224ed30331a29088d5`).
+- On that accessible archive: integration 488/488; SHA256SUMS 489/489; JSON 56/56; Python compileall 18 files; Unity .meta 145/145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices.
+- Regression: 12/12 self-contained + 4/4 isolated-server entries PASS individually. Aggregate runner INCOMPLETE at the 300-second command window.
+- FP-CLI-001 remains confirmed/open: metadata publishes `websocket_path`, but Unity bootstrap does not apply it.
+- No new complete project ZIP or runtime network patch was generated. Formal main repo remains read-only to this connection; this mirror update is documentation-only.
+- Run 13 Word report SHA-256: `7d2d718c2d40346b582fc52db950f3d21ecfee063229907548f49bf9816b51b5`.
+- Run 13 no-code update log SHA-256: `98b77a2f07fef0150b8e0a4a2ea254f0820d33e18173cd141c4ac5a127ae7118`.
+- Run 13 static audit SHA-256: `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
+- Run 13 evidence ZIP: 20 entries, CRC PASS, internal SHA 19/19, SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
