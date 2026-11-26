@@ -111,3 +111,11 @@ This index records artifacts verified in the current file workspace. It does **n
 - FP-CLI-001 custom path reproduced: `/api/meta` advertises `/ws-alt`; `/ws-alt` returns welcome; `/ws` is rejected; bootstrap does not apply `meta.websocket_path`.
 - No source/runtime/config/art/API/protocol/Schema changes; formal version remains v11.0.0.0. The historical v11.0.0.1 candidate binary is unavailable for rebase; v12.0.0.0 remains blocked.
 - No new complete project package or runtime network patch was generated. Existing 2026-11-20 complete package and 2026-11-19 runtime patch remain the verified references.
+
+
+## 2026-11-27 bi-daily milestone maintenance — Run 13
+- Milestone report: `FrontlineProtocol_BiDaily_Milestone_Report_2026-11-27.docx` — 41,370 bytes; SHA-256 `7d2d718c2d40346b582fc52db950f3d21ecfee063229907548f49bf9816b51b5`.
+- No-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-27.docx` — 39,411 bytes; SHA-256 `98b77a2f07fef0150b8e0a4a2ea254f0820d33e18173cd141c4ac5a127ae7118`.
+- Static audit report: `FrontlineProtocol_v11.0.0.0_Static_Audit_Report_2026-11-27.docx` — 40,685 bytes; SHA-256 `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
+- Evidence ZIP: `FrontlineProtocol_BiDaily_Evidence_2026-11-27.zip` — 177,609 bytes; 20 entries; CRC PASS; internal SHA 19/19; SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
+- No new complete project ZIP or runtime network patch was generated. The last physically accessible references are the 2026-11-15 v11.0.0.0 complete archive and 33-entry runtime patch; both remain historical references only.
