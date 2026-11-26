@@ -143,3 +143,19 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - Run 12 no-code update log: 38,169 bytes, SHA-256 `5bfcf6ddcf0007f9ad92cd113378ea3fd67786589b3eccf39ad5d0ec79f2ebaf`.
 - Run 12 evidence ZIP: 83,589 bytes, 12 entries, CRC PASS, SHA-256 `dc4e6df43b511160f985a96f19ae12d27fbc41696c94705e2b32dcb014e1b936`.
 - No source tree or binary artifact was uploaded to this documentation mirror.
+
+
+## 2026-11-27 source import and verification — Run 13
+- Formal release remains v11.0.0.0; the next major milestone target is v12.0.0.0 but release remains blocked.
+- The 2026-11-20 complete archive recorded by Run 12 (497 entries; SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`) was not present in the active workspace used by Run 13. The 2026-11-23 v11.0.0.1 candidate binary was also not present. No rebase or promotion was performed.
+- The physically accessible 2026-11-15 v11.0.0.0 archive was rechecked: 1,432,078 bytes, 490 entries, CRC PASS, SHA-256 `a2c1e21c12e9076c96394228dfa18be07b8c9a7260183b6bda995933aa1198c9`.
+- Runtime network patch: 132,041 bytes, 33 entries, CRC PASS, SHA-256 `0e9478cc73271e5b51106111c2b8b15347d63557bcf474224ed30331a29088d5`; all 33 files match the accessible complete package byte-for-byte.
+- Static: integration 488/488; SHA256SUMS 489/489; JSON 56/56; Python compileall 18 files; Unity .meta 145/145 and 145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices.
+- Regression: 12/12 self-contained and 4/4 isolated-server entries PASS individually. Aggregate runner INCOMPLETE at 300 seconds.
+- FP-CLI-001 remains confirmed/open: /api/meta advertises websocket_path, while Unity bootstrap continues to assign ServerConfig.websocketPath rather than applying the advertised value.
+- No source/runtime/config/art/API/protocol/Schema change, no version increment and no new project or runtime network patch package.
+- Run 13 report: 41,370 bytes; SHA-256 `7d2d718c2d40346b582fc52db950f3d21ecfee063229907548f49bf9816b51b5`.
+- Run 13 no-code update log: 39,411 bytes; SHA-256 `98b77a2f07fef0150b8e0a4a2ea254f0820d33e18173cd141c4ac5a127ae7118`.
+- Run 13 static audit: 40,685 bytes; SHA-256 `486fd81dfe38fed505be1e04f962345a6686c1391f312e35288c0480831ff0f5`.
+- Run 13 evidence ZIP: 177,609 bytes, 20 entries, CRC PASS, internal SHA records 19/19; SHA-256 `93cc4945388dc880c2295028acd0afe9a9a57499056cb22bbc5fcf5fff4469a7`.
+- Formal main repository remains push=false; this repository is a documentation-only test mirror. No source tree or binary artifact was uploaded.
