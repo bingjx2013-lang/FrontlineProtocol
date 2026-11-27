@@ -140,3 +140,10 @@ This index records artifacts verified in the current file workspace. It does **n
 - 17/17 individual regression entries PASS; aggregate runner TIMEOUT/INCOMPLETE; static checks and FP-CLI-001/FP-NET-002 reproductions are recorded in Run15 report.
 - No source/runtime/config/API/protocol/Schema change; formal version remains v11.0.0.0; Bug counts 0/0/0. v11.0.0.1 remains an unreconciled candidate.
 - Binary candidate complete/patch ZIPs remain in the ChatGPT file workspace, not this GitHub test mirror. No source or binary artifact was uploaded to GitHub.
+
+
+## 2026-11-28 daily maintenance — Run 16
+- Word daily report: `FrontlineProtocol_Daily_Maintenance_Report_2026-11-28_Run16.docx` — 39,718 bytes; SHA-256 `cb783ed9f350832f33dae89164785c7aa8c56f166cf710b017137ba15a8a4820`.
+- Word no-code update log: `FrontlineProtocol_v11.0.0.0_No_Code_Change_Update_Log_2026-11-28_Run16.docx` — 38,552 bytes; SHA-256 `75c0fb1868e9dc6a476bcbe2639a4571ee4dab6827d9e9b6e82576e75e3c3c3b`.
+- Evidence ZIP: `FrontlineProtocol_Daily_Maintenance_Evidence_2026-11-28_Run16.zip` — 85,569 bytes; 15 entries; CRC PASS; SHA-256 `59fe099ed3cbdb70f1bd054c4e648931c54e7e98e474c2e2498c3e0fbf959ac0`.
+- Formal version remains v11.0.0.0; no runtime source or patch was changed. These generated artifacts are in the ChatGPT file workspace, not committed as binaries here.
