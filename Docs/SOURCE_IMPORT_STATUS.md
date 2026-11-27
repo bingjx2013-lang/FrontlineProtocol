@@ -182,3 +182,12 @@ Candidate diffs and audit reports are not substitutes for a complete v12 source 
 - FP-NET-002 port collision reproduced: occupied configured port makes the Hub process exit with Errno 98; no automatic port fallback/discovery.
 - No runtime source change; formal release remains v11.0.0.0; Bug counts 0/0/0; no v11.0.0.2.
 - v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, 12-group art overlay, FieldOperationsCatalog_v12.json and manifests.
+
+
+## 2026-11-28 source import and verification — Run 16
+- Formal main repository remains README-only (28 bytes) and push=false; legacy repository has only a 3-byte source-like C# stub and push=false; writable test mirror remains documentation-only.
+- Current accessible complete source is the 2026-11-20 v11.0.0.0 archive: 1,517,723 bytes, 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- 16/16 regression child tests passed individually; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner printed ALL PASS but no clean exit status was captured.
+- Static: integration 495/495; SHA 496/496; JSON 57/57; Python 18/18; Unity meta 145/145 unique GUIDs; OBJ 28 with zero invalid indices; C# lexical scan 48 files (not compilation).
+- FP-CLI-001 re-reproduced; FP-NET-002 confirmed on the formal v11 source (occupied port causes OSError 98; no port fallback or client discovery). No source package or runtime patch was created.
+- v11.0.0.1 candidate binary remains unavailable for reconciliation. v12.0.0.0 remains BLOCKED by missing complete Client/Hub Server/Admin source, art overlay, catalog and manifests.
