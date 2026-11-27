@@ -152,3 +152,15 @@
 - The accessible v11.0.0.1 508-entry archive is a historical candidate based on the 2026-11-15 490-entry baseline; do not promote until reconciled with the 2026-11-20 package.
 - Run15 runtime Bug counts: newly registered 0 / fixed 0 / newly opened 0. FP-CLI-001 remains an existing OPEN issue.
 - No complete v12.0.0.0 source tree or 12-group art overlay/catalog/manifests are available.
+
+
+## 2026-11-28 daily maintenance — Run 16
+- Formal release remains **v11.0.0.0** (A=11, B=0, C=0, D=0); no source/runtime/config/art/API/protocol/Schema change and no version increment.
+- Current workspace reverified the 2026-11-20 complete source archive: 497 entries, CRC PASS, SHA-256 `ed2c4420a2f0616aef295548c4146cb69f5888a6a603536767011b841c3c333e`.
+- Regression: 16/16 individual entries PASS; maintenance repeat 5/5; Admin Cookie probes 3/3. Aggregate runner summary printed ALL PASS but clean exit status was not captured; classify aggregate as INCOMPLETE.
+- Static: integration 495/495; SHA 496/496; JSON 57/57; Python 18/18; Unity .meta 145/145 unique GUIDs; OBJ 28 / 1,320 vertices / 928 faces / zero invalid indices; C# lexical scan 48 files (not compilation).
+- FP-CLI-001 remains OPEN; FP-NET-002 was reproduced on the v11.0.0.0 source (occupied port causes OSError 98; no fallback or discovery). QA-AGG-001 remains an unresolved test-harness exit issue.
+- No new complete project package or runtime network patch was generated. v11.0.0.1 candidate remains unreconciled; v12.0.0.0 remains BLOCKED.
+- Run 16 Word report SHA-256: `cb783ed9f350832f33dae89164785c7aa8c56f166cf710b017137ba15a8a4820`.
+- Run 16 no-code update log SHA-256: `75c0fb1868e9dc6a476bcbe2639a4571ee4dab6827d9e9b6e82576e75e3c3c3b`.
+- Run 16 evidence ZIP SHA-256: `59fe099ed3cbdb70f1bd054c4e648931c54e7e98e474c2e2498c3e0fbf959ac0`.
